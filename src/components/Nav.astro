@@ -1,0 +1,146 @@
+---
+import astroLogo from '../assets/astro.svg';
+import background from '../assets/background.svg';
+---
+
+<header x-data="{ openMobileView: false }">
+    <nav class="w-[1020pxs] container mx-auto flex justify-between items-center py-6 px-4">
+        <div>
+            <span class="uppercase font-black">
+                <img src={astroLogo.src} alt="Adoko Farms Eco Resort Logo" />
+            </span>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="hidden md:block">
+                <ul class="flex items-center gap-6">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/experiences">Experience</a>
+                    </li>
+                    <li>
+                        <a href="/accommodation">Accommodations</a>
+                    </li>
+                    <li class="relative">
+                        <button type="button" class="cursor-pointer">Resources</button>
+                        <span class="absolute mt-3 hidden">
+                            <ul>
+                                <li>
+                                    <a>About us</a>
+                                </li>
+                                <li>
+                                    <a>Blog</a>
+                                </li>
+                                <li>
+                                    <a>FAQs</a>
+                                </li>
+                                <li>
+                                    <a>Directions</a>
+                                </li>
+                                <li>
+                                    <a>Travel Guides</a>
+                                </li>
+                                <li>
+                                    <a>Reviews</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span class="hidden md:block">
+                    <button class="flex items-center gap-2 border rounded-2xl px-3 py-1 cursor-pointer">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                            </svg>
+                        </span>
+                        <span>
+                            Book today
+                        </span>
+                    </button>
+                </span>
+                <span class="md:hidden">
+                    <button x-on:click="openMobileView = !openMobileView"
+                            class="border rounded-2xl px-3 py-1
+                        text-sm flex items-center gap-2 cursor-pointer">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 6l16 0" />
+                                <path d="M4 12l16 0" />
+                                <path d="M4 18l16 0" />
+                            </svg>
+                        </span>
+                        <span>
+                            Menu
+                        </span>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div x-show="openMobileView" x-on:click.away="openMobileView = false" class="py-9 text-center md:hidden">
+        <ul class="flex flex-col gap-6 text-2xl">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Experiences</a>
+            </li>
+            <li>
+                <a href="">Accommodations</a>
+            </li>
+            <li class="">
+                <button type="button" class="cursor-pointer mb-6">Resources</button>
+                <span class="mt-3">
+                            <ul class="space-y-6">
+                                <li>
+                                    <a>About us</a>
+                                </li>
+                                <li>
+                                    <a>Blog</a>
+                                </li>
+                                <li>
+                                    <a>FAQs</a>
+                                </li>
+                                <li>
+                                    <a>Directions</a>
+                                </li>
+                                <li>
+                                    <a>Travel Guides</a>
+                                </li>
+                                <li>
+                                    <a>Reviews</a>
+                                </li>
+                            </ul>
+                        </span>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+            <li>
+                <span class="inline-block">
+                    <button class="flex items-center gap-2 border rounded-2xl px-3 py-1 cursor-pointer">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                            </svg>
+                        </span>
+                        <span>
+                            Book today
+                        </span>
+                    </button>
+                </span>
+            </li>
+        </ul>
+    </div>
+</header>
