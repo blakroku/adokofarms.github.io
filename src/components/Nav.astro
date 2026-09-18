@@ -5,7 +5,7 @@ import background from '../assets/background.svg';
 ---
 
 <header
-        x-data="{ openMobileView: false }"
+        x-data="{ openMobileView: false, openDesktopResourceLink: false }"
         class="relative min-h-[70vh] w-full overflow-hidden bg-cover bg-center md:min-h-[80vh]"
         style="background-image: url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=2000&q=85');"
 >
@@ -15,16 +15,16 @@ import background from '../assets/background.svg';
 
     <nav class="relative z-20 w-[1020pxs] container mx-auto flex justify-between items-center py-6 px-4 text-white">
         <div>
-            <span class="uppercase font-black text-xl">
+            <a href="/" class="uppercase text-xl font-light sm:text-2xl sm:font-black tracking-widest">
                 <!--<img src={adokofarmsLogo.src} alt="Adoko Farms Eco Resort Logo" width="130" />-->
-                Adoko Farms Eco Resort
-            </span>
+                Adoko Farms
+            </a>
         </div>
 
         <div class="flex items-center gap-6">
 
             <div class="hidden md:block">
-                <ul class="flex items-center gap-6">
+                <ul class="flex items-center gap-10 font-semibold text-sm uppercase">
                     <li>
                         <a href="/">Home</a>
                     </li>
@@ -32,29 +32,30 @@ import background from '../assets/background.svg';
                         <a href="/experiences">Experience</a>
                     </li>
                     <li>
-                        <a href="/accommodation">Accommodations</a>
+                        <a href="/accommodation">Activities</a>
                     </li>
                     <li class="relative">
-                        <button type="button" class="cursor-pointer">Resources</button>
-                        <span class="absolute mt-3 hidden">
-                            <ul>
+                        <button type="button" class="cursor-pointer text-sm uppercase" x-on:click="openDesktopResourceLink = !openDesktopResourceLink">Resources</button>
+
+                        <span class="absolute mt-3 right-0 top-8" x-show="openDesktopResourceLink">
+                            <ul class="space-y-5">
                                 <li>
-                                    <a>About us</a>
+                                    <a href="#">About us</a>
                                 </li>
                                 <li>
-                                    <a>Blog</a>
+                                    <a href="#">Blog</a>
                                 </li>
                                 <li>
-                                    <a>FAQs</a>
+                                    <a href="#">FAQs</a>
                                 </li>
                                 <li>
-                                    <a>Directions</a>
+                                    <a href="#">Directions</a>
                                 </li>
                                 <li>
-                                    <a>Travel Guides</a>
+                                    <a href="#">Travel Guides</a>
                                 </li>
                                 <li>
-                                    <a>Reviews</a>
+                                    <a href="#">Reviews</a>
                                 </li>
                             </ul>
                         </span>
@@ -67,14 +68,14 @@ import background from '../assets/background.svg';
 
             <div>
                 <span class="hidden md:block">
-                    <button class="flex items-center gap-2 border rounded-2xl px-3 py-1 cursor-pointer">
+                    <button class="flex items-center gap-2 border rounded-2xl px-3 py-1 cursor-pointer uppercase text-sm">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                             </svg>
                         </span>
                         <span>
-                            Book today
+                            Book Now
                         </span>
                     </button>
                 </span>
@@ -118,11 +119,11 @@ import background from '../assets/background.svg';
                 <a href="">Experiences</a>
             </li>
             <li>
-                <a href="">Accommodations</a>
+                <a href="">Activities</a>
             </li>
             <li>
-                <button type="button" class="cursor-pointer mb-6">Resources</button>
-                <span class="mt-3">
+                <button type="button" class="cursor-pointer mb-2 sm:mb-6">Resources</button>
+                <span class="mt-3 hidden">
                     <ul class="space-y-6">
                         <li>
                             <a>About us</a>
@@ -153,7 +154,7 @@ import background from '../assets/background.svg';
                     <button class="flex items-center gap-2 border rounded-2xl px-3 py-1 cursor-pointer">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 0 2.25-2.25h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                             </svg>
                         </span>
                         <span>
@@ -168,6 +169,7 @@ import background from '../assets/background.svg';
 
     <!-- Hero -->
     <section
+            x-show="!openMobileView"
             class="relative z-10 flex min-h-[70vh] w-full items-center justify-center overflow-hidden md:min-h-[80vh]"
     >
         <!-- Content -->
