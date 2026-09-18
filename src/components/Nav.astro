@@ -4,15 +4,25 @@ import adokofarmsLogo from '../assets/adokofarmslogo.png';
 import background from '../assets/background.svg';
 ---
 
-<header x-data="{ openMobileView: false }">
-    <nav class="w-[1020pxs] container mx-auto flex justify-between items-center py-6 px-4">
+<header
+        x-data="{ openMobileView: false }"
+        class="relative min-h-[70vh] w-full overflow-hidden bg-cover bg-center md:min-h-[80vh]"
+        style="background-image: url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=2000&q=85');"
+>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <nav class="relative z-20 w-[1020pxs] container mx-auto flex justify-between items-center py-6 px-4 text-white">
         <div>
             <span class="uppercase font-black text-xl">
                 <!--<img src={adokofarmsLogo.src} alt="Adoko Farms Eco Resort Logo" width="130" />-->
                 Adoko Farms Eco Resort
             </span>
         </div>
+
         <div class="flex items-center gap-6">
+
             <div class="hidden md:block">
                 <ul class="flex items-center gap-6">
                     <li>
@@ -54,12 +64,13 @@ import background from '../assets/background.svg';
                     </li>
                 </ul>
             </div>
+
             <div>
                 <span class="hidden md:block">
                     <button class="flex items-center gap-2 border rounded-2xl px-3 py-1 cursor-pointer">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                             </svg>
                         </span>
                         <span>
@@ -67,10 +78,12 @@ import background from '../assets/background.svg';
                         </span>
                     </button>
                 </span>
+
                 <span class="md:hidden">
-                    <button x-on:click="openMobileView = !openMobileView"
-                            class="border rounded-2xl px-3 py-1
-                        text-sm flex items-center gap-2 cursor-pointer">
+                    <button
+                            x-on:click="openMobileView = !openMobileView"
+                            class="border rounded-2xl px-3 py-1 text-sm flex items-center gap-2 cursor-pointer"
+                    >
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -90,7 +103,13 @@ import background from '../assets/background.svg';
             </div>
         </div>
     </nav>
-    <div x-show="openMobileView" x-on:click.away="openMobileView = false" class="py-9 text-center md:hidden">
+
+
+    <div
+            x-show="openMobileView"
+            x-on:click.away="openMobileView = false"
+            class="relative z-20 py-9 text-center text-white md:hidden"
+    >
         <ul class="flex flex-col gap-6 text-2xl">
             <li>
                 <a href="">Home</a>
@@ -101,30 +120,30 @@ import background from '../assets/background.svg';
             <li>
                 <a href="">Accommodations</a>
             </li>
-            <li class="">
+            <li>
                 <button type="button" class="cursor-pointer mb-6">Resources</button>
                 <span class="mt-3">
-                            <ul class="space-y-6">
-                                <li>
-                                    <a>About us</a>
-                                </li>
-                                <li>
-                                    <a>Blog</a>
-                                </li>
-                                <li>
-                                    <a>FAQs</a>
-                                </li>
-                                <li>
-                                    <a>Directions</a>
-                                </li>
-                                <li>
-                                    <a>Travel Guides</a>
-                                </li>
-                                <li>
-                                    <a>Reviews</a>
-                                </li>
-                            </ul>
-                        </span>
+                    <ul class="space-y-6">
+                        <li>
+                            <a>About us</a>
+                        </li>
+                        <li>
+                            <a>Blog</a>
+                        </li>
+                        <li>
+                            <a>FAQs</a>
+                        </li>
+                        <li>
+                            <a>Directions</a>
+                        </li>
+                        <li>
+                            <a>Travel Guides</a>
+                        </li>
+                        <li>
+                            <a>Reviews</a>
+                        </li>
+                    </ul>
+                </span>
             </li>
             <li>
                 <a href="">Contact</a>
@@ -134,7 +153,7 @@ import background from '../assets/background.svg';
                     <button class="flex items-center gap-2 border rounded-2xl px-3 py-1 cursor-pointer">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                             </svg>
                         </span>
                         <span>
@@ -145,4 +164,27 @@ import background from '../assets/background.svg';
             </li>
         </ul>
     </div>
+
+
+    <!-- Hero -->
+    <section
+            class="relative z-10 flex min-h-[70vh] w-full items-center justify-center overflow-hidden md:min-h-[80vh]"
+    >
+        <!-- Content -->
+        <div class="relative z-10 mx-auto max-w-4xl px-6 text-center text-white">
+
+            <h1 class="text-4xl font-light tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+                Visit Eco Resort
+            </h1>
+
+            <div class="mt-5">
+                <span class="text-lg font-light sm:text-xl md:text-2xl">
+                    Beyond the beaten path!
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
 </header>

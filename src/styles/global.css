@@ -1,9 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 @import "tailwindcss";
 
-:root {
-    --background-color: white;
+@theme {
+    --font-sans: 'Figtree', sans-serif;
+    --font-display: 'Figtree', sans-serif;
 }
 
+:root {
+    --background-color: rgb(236, 234, 222);
+}
+
+
+
 body {
+    @apply font-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgb(255, 255, 255);
     background-color: var(--background-color);
+}
+
+.container-content {
+    max-width: 900px;
 }
