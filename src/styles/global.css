@@ -37,70 +37,70 @@ body {
 
 /* Buttons */
 .btn-book {
-    @apply bg-[#F6F700] cursor-pointer z-1 text-white;
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.45rem 1.5rem;
-  /*color: white;*/
-  font-weight: 600;
-  border: none;
-  border-radius: 0.5rem; /* Rounded corners
-  /*cursor: pointer;*/
-  text-decoration: none;
-  transition: all 0.3s ease;
-  /*z-index: 1;*/
+    @apply bg-[white] cursor-pointer z-1 text-black;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 1.5rem;
+    /*color: white;*/
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem; /* Rounded corners
+    /*cursor: pointer;*/
+    text-decoration: none;
+    transition: all 0.3s ease;
+    /*z-index: 1;*/
 }
 
 .btn-book::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background-color: rgba(0, 0, 0, 0.3); /* Dark shadow */
-  border-radius: 0.5rem;
-  z-index: -1;
-  transition: all 0.3s ease;
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    /*background-color: rgba(0, 0, 0, 0.3); /* Dark shadow */
+    border-radius: 0.5rem;
+    z-index: -1;
+    transition: all 0.3s ease;
 }
 
 /* Optional: Hover effect to make shadow expand more */
 .btn-book:hover::after {
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  background-color: rgba(0, 0, 0, 0.5);
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .btn-book:hover {
-    @apply bg-green-500;
-  /*background-color: #2563eb;*/
-  transform: translateY(-2px);
+    @apply bg-[#4B515F] text-white;
+    /*background-color: #2563eb;*/
+    transform: translateY(-3px);
 }
 
 .btn-book svg {
-  width: 1rem;
-  height: 1rem;
+    width: 1rem;
+    height: 1rem;
 }
 
 .activity-link {
     @apply bg-white px-5 py-2;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  /*padding: 1rem 1.75rem;*/
-  /*border: 2px solid currentColor;*/
-  border-radius: 9999px;
-  text-decoration: none;
-  color: inherit;
-  transition: padding 0.3s ease;
-  z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /*padding: 1rem 1.75rem;*/
+    /*border: 2px solid currentColor;*/
+    border-radius: 9999px;
+    text-decoration: none;
+    color: inherit;
+    transition: padding 0.3s ease;
+    z-index: 1;
 }
 
 .activity-link:hover {
     @apply px-7 py-2;
-  /*padding: 1rem 3rem; /* Expands left and right padding */
+    /*padding: 1rem 3rem; /* Expands left and right padding */
 }
