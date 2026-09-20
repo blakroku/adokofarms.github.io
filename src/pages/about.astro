@@ -1,0 +1,371 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Page from "../components/Page.astro";
+
+const title = "About us";
+---
+
+<Layout title={title}>
+    <Page>
+        <!-- Hero -->
+        <section class="relative overflow-hidden bg-[#f4f1e8] py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto max-w-5xl text-center">
+                    <p class="text-xs font-medium uppercase tracking-[0.35em] text-[#66705f]">
+                        About Adoko Farms
+                    </p>
+
+                    <h1 class="mt-5 text-5xl font-light tracking-tight text-[#263b2a] md:text-7xl">
+                        A different way to experience Ghana
+                    </h1>
+
+                    <p class="mx-auto mt-7 max-w-2xl text-base leading-8 text-gray-600 md:text-lg">
+                        A working farm, an agrotourism destination, and a place
+                        to slow down, connect with nature, and experience rural
+                        Ghana.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="bg-white py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto grid max-w-6xl gap-12 md:grid-cols-2 md:items-center md:gap-20">
+                    <!-- Image -->
+                    <div class="relative">
+                        <div class="h-[480px] overflow-hidden rounded-[2rem] md:h-[600px]">
+                            <img
+                                src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=85"
+                                alt="Life on a farm"
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div>
+                        <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#66705f]">
+                            Our story
+                        </p>
+
+                        <h2 class="mt-4 text-4xl font-light tracking-tight text-[#263b2a] md:text-5xl">
+                            More than a place to stay
+                        </h2>
+
+                        <div class="mt-7 space-y-5 text-base leading-8 text-gray-600">
+                            <p>
+                                Adoko Farms is a working farm and agrotourism
+                                destination in Akropong-Akuapem, about 54km from
+                                Accra.
+                            </p>
+
+                            <p>
+                                We create experiences that bring people closer
+                                to nature, farming, local communities, and the
+                                quieter side of Ghana.
+                            </p>
+
+                            <p>
+                                From spending a night at the farm to exploring
+                                the surrounding landscape, our experiences are
+                                designed around discovering Ghana beyond the
+                                usual tourist paths.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Perspective -->
+        <section class="bg-[#f4f1e8] py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto max-w-6xl">
+                    <div class="max-w-3xl">
+                        <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#66705f]">
+                            Our perspective
+                        </p>
+
+                        <h2 class="mt-4 text-4xl font-light tracking-tight text-[#263b2a] md:text-6xl">
+                            Ghana is best experienced beyond the obvious.
+                        </h2>
+
+                        <p class="mt-7 max-w-2xl text-base leading-8 text-gray-600 md:text-lg">
+                            There is another side of Ghana beyond the busy
+                            cities and familiar tourist destinations. It is
+                            found in rural landscapes, farms, communities, food,
+                            nature, and the everyday experiences that make a
+                            place memorable.
+                        </p>
+                    </div>
+
+                    <!-- Image strip -->
+                    <div class="mt-16 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
+                        <div class="h-64 overflow-hidden rounded-[1.5rem] md:h-80">
+                            <img
+                                src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=700&q=85"
+                                alt="Farm landscape"
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+
+                        <div class="mt-8 h-64 overflow-hidden rounded-full md:mt-16 md:h-80">
+                            <img
+                                src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=700&q=85"
+                                alt="Natural landscape"
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+
+                        <div class="h-64 overflow-hidden rounded-[1.5rem] md:h-80">
+                            <img
+                                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85"
+                                alt="Rural Ghana"
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+
+                        <div class="mt-8 h-64 overflow-hidden rounded-[1.5rem] md:mt-16 md:h-80">
+                            <img
+                                src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=700&q=85"
+                                alt="Local experience"
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Offer -->
+        <section class="bg-white py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto max-w-6xl">
+                    <div class="max-w-2xl">
+                        <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#66705f]">
+                            What we offer
+                        </p>
+
+                        <h2 class="mt-4 text-4xl font-light tracking-tight text-[#263b2a] md:text-5xl">
+                            Come for the experience
+                        </h2>
+
+                        <p class="mt-6 text-base leading-8 text-gray-600">
+                            Whether you're looking for a quiet escape or a
+                            chance to explore, our experiences give you
+                            different ways to connect with the farm and its
+                            surroundings.
+                        </p>
+                    </div>
+
+                    <div class="mt-14 grid gap-px overflow-hidden rounded-[2rem] bg-gray-200 md:grid-cols-2">
+                        <div class="bg-white p-8 md:p-10">
+                            <p class="text-xs uppercase tracking-[0.25em] text-[#66705f]">
+                                01
+                            </p>
+
+                            <h3 class="mt-4 text-2xl font-light text-[#263b2a]">
+                                Farm Stays
+                            </h3>
+
+                            <p class="mt-4 text-sm leading-7 text-gray-600">
+                                Slow down and spend time in the peaceful
+                                surroundings of a working farm.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-8 md:p-10">
+                            <p class="text-xs uppercase tracking-[0.25em] text-[#66705f]">
+                                02
+                            </p>
+
+                            <h3 class="mt-4 text-2xl font-light text-[#263b2a]">
+                                Camping
+                            </h3>
+
+                            <p class="mt-4 text-sm leading-7 text-gray-600">
+                                Experience the outdoors in a setting away from
+                                the noise and pace of the city.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-8 md:p-10">
+                            <p class="text-xs uppercase tracking-[0.25em] text-[#66705f]">
+                                03
+                            </p>
+
+                            <h3 class="mt-4 text-2xl font-light text-[#263b2a]">
+                                Guided Farm Tours
+                            </h3>
+
+                            <p class="mt-4 text-sm leading-7 text-gray-600">
+                                Discover the farm, its surroundings, and the
+                                everyday work behind the experience.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-8 md:p-10">
+                            <p class="text-xs uppercase tracking-[0.25em] text-[#66705f]">
+                                04
+                            </p>
+
+                            <h3 class="mt-4 text-2xl font-light text-[#263b2a]">
+                                Farm-to-Table Dining
+                            </h3>
+
+                            <p class="mt-4 text-sm leading-7 text-gray-600">
+                                Experience food as part of the farm and the
+                                wider journey through Ghana.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-8 md:p-10">
+                            <p class="text-xs uppercase tracking-[0.25em] text-[#66705f]">
+                                05
+                            </p>
+
+                            <h3 class="mt-4 text-2xl font-light text-[#263b2a]">
+                                Nature Experiences
+                            </h3>
+
+                            <p class="mt-4 text-sm leading-7 text-gray-600">
+                                Explore the natural landscapes surrounding Adoko
+                                Farms.
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-8 md:p-10">
+                            <p class="text-xs uppercase tracking-[0.25em] text-[#66705f]">
+                                06
+                            </p>
+
+                            <h3 class="mt-4 text-2xl font-light text-[#263b2a]">
+                                Day Visits
+                            </h3>
+
+                            <p class="mt-4 text-sm leading-7 text-gray-600">
+                                Spend a day at the farm with family, friends,
+                                schools, or small groups.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Numbers -->
+        <section class="bg-[#263b2a] py-20 text-white md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto grid max-w-6xl gap-12 text-center md:grid-cols-3 md:gap-0">
+                    <div class="md:border-r md:border-white/20">
+                        <p class="text-5xl font-light md:text-6xl">3,000+</p>
+
+                        <p class="mt-3 text-sm text-white/60">
+                            Guests welcomed
+                        </p>
+                    </div>
+
+                    <div class="md:border-r md:border-white/20">
+                        <p class="text-5xl font-light md:text-6xl">100+</p>
+
+                        <p class="mt-3 text-sm text-white/60">
+                            Tours experienced
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="text-5xl font-light md:text-6xl">6</p>
+
+                        <p class="mt-3 text-sm text-white/60">
+                            Years of existence
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Philosophy -->
+        <section class="bg-white py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto grid max-w-6xl gap-12 md:grid-cols-[1fr_1.2fr] md:items-center md:gap-20">
+                    <div>
+                        <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#66705f]">
+                            Why Adoko Farms
+                        </p>
+
+                        <h2 class="mt-4 text-4xl font-light tracking-tight text-[#263b2a] md:text-5xl">
+                            Come for the place. Leave with the experience.
+                        </h2>
+                    </div>
+
+                    <div class="space-y-6 text-base leading-8 text-gray-600">
+                        <p>
+                            We believe travel becomes more meaningful when you
+                            have the opportunity to slow down and experience a
+                            place beyond its most obvious attractions.
+                        </p>
+
+                        <p>
+                            That's why Adoko Farms brings together
+                            accommodation, food, farming, nature, and
+                            experiences in one place.
+                        </p>
+
+                        <p>
+                            Our goal is simple: create experiences that help
+                            guests discover another side of Ghana.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Image / CTA -->
+        <section class="relative overflow-hidden bg-[#263b2a]">
+            <div class="grid md:grid-cols-2">
+                <div class="min-h-[420px]">
+                    <img
+                        src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85"
+                        alt="Adoko Farms experience"
+                        class="h-full w-full object-cover"
+                    />
+                </div>
+
+                <div class="flex items-center px-8 py-20 text-white md:px-16 lg:px-20">
+                    <div class="max-w-lg">
+                        <p class="text-xs font-medium uppercase tracking-[0.35em] text-white/60">
+                            Your escape starts here
+                        </p>
+
+                        <h2 class="mt-5 text-4xl font-light tracking-tight md:text-5xl">
+                            Experience rural Ghana with us.
+                        </h2>
+
+                        <p class="mt-6 text-sm leading-7 text-white/70 md:text-base">
+                            Explore our tours, activities, stays, and
+                            experiences and find your own way to discover Adoko
+                            Farms.
+                        </p>
+
+                        <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+                            <a
+                                href="/tours"
+                                class="inline-flex justify-center rounded-full bg-white px-7 py-3 text-sm text-[#263b2a] transition hover:bg-white/90"
+                            >
+                                Explore tours
+                            </a>
+
+                            <a
+                                href="/contact"
+                                class="inline-flex justify-center rounded-full border border-white/40 px-7 py-3 text-sm transition hover:bg-white hover:text-[#263b2a]"
+                            >
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </Page>
+</Layout>

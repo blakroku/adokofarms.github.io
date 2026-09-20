@@ -1,0 +1,532 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Page from "../components/Page.astro";
+
+const title = "Blog";
+---
+
+<Layout title={title}>
+    <Page>
+        <!-- Hero -->
+        <section class="relative overflow-hidden bg-[#f4f1e8] py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto max-w-4xl text-center">
+                    <p class="text-xs font-medium uppercase tracking-[0.35em] text-[#66705f]">
+                        Journal
+                    </p>
+
+                    <h1 class="mt-5 text-5xl font-light tracking-tight text-[#263b2a] md:text-7xl">
+                        Stories from Ghana
+                    </h1>
+
+                    <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600 md:text-lg">
+                        Travel stories, local knowledge, guides, and inspiration
+                        for discovering Ghana beyond the usual tourist paths.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="bg-white py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto max-w-7xl">
+                    <div class="mb-10">
+                        <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#66705f]">
+                            Featured story
+                        </p>
+                    </div>
+
+                    <article class="group grid overflow-hidden rounded-[2rem] bg-[#f4f1e8] md:grid-cols-2">
+                        <div class="relative min-h-[400px] overflow-hidden md:min-h-[560px]">
+                            <img
+                                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=85"
+                                alt="Rural Ghana landscape"
+                                class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                            />
+                        </div>
+
+                        <div class="flex items-center p-8 md:p-12 lg:p-16">
+                            <div class="max-w-xl">
+                                <div class="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
+                                    <span>Travel Guide</span>
+                                    <span>•</span>
+                                    <span>8 min read</span>
+                                </div>
+
+                                <h2 class="mt-5 text-4xl font-light tracking-tight text-[#263b2a] md:text-5xl">
+                                    Discovering rural Ghana beyond the tourist
+                                    trail
+                                </h2>
+
+                                <p class="mt-6 text-sm leading-7 text-gray-600 md:text-base">
+                                    A closer look at the landscapes,
+                                    communities, food, and everyday experiences
+                                    that make rural Ghana worth discovering.
+                                </p>
+
+                                <div class="mt-8">
+                                    <a
+                                        href="#"
+                                        class="inline-flex items-center gap-2 rounded-full bg-[#263b2a] px-6 py-3 text-sm text-white transition hover:bg-[#1c2d20]"
+                                    >
+                                        Read story
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            class="size-4"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Articles -->
+        <section class="bg-[#f4f1e8] py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto max-w-7xl">
+                    <div class="mb-12 flex flex-col gap-5 md:mb-16 md:flex-row md:items-end md:justify-between">
+                        <div>
+                            <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#66705f]">
+                                Latest stories
+                            </p>
+
+                            <h2 class="mt-3 text-4xl font-light tracking-tight text-[#263b2a] md:text-5xl">
+                                From our journal
+                            </h2>
+                        </div>
+
+                        <p class="max-w-md text-sm leading-7 text-gray-500 md:text-right">
+                            Ideas, stories, and useful guides to help you
+                            experience Ghana differently.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- Article 1 -->
+                        <article class="group overflow-hidden rounded-[1.75rem] bg-white">
+                            <div class="relative h-72 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=85"
+                                    alt="Farm and agriculture in Ghana"
+                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                                />
+                            </div>
+
+                            <div class="p-6 md:p-7">
+                                <div class="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
+                                    <span>Rural Ghana</span>
+                                    <span>•</span>
+                                    <span>6 min</span>
+                                </div>
+
+                                <h3 class="mt-4 text-2xl font-light leading-tight text-[#263b2a]">
+                                    Why rural Ghana deserves a place on your
+                                    itinerary
+                                </h3>
+
+                                <p class="mt-4 text-sm leading-7 text-gray-600">
+                                    Beyond the cities and famous attractions,
+                                    discover another side of Ghana.
+                                </p>
+
+                                <a
+                                    href="#"
+                                    class="mt-6 inline-flex items-center gap-2 text-sm text-[#263b2a] underline underline-offset-4"
+                                >
+                                    Read article
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="size-4"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Article 2 -->
+                        <article class="group overflow-hidden rounded-[1.75rem] bg-white">
+                            <div class="relative h-72 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1000&q=85"
+                                    alt="Nature in Ghana"
+                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                                />
+                            </div>
+
+                            <div class="p-6 md:p-7">
+                                <div class="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
+                                    <span>Nature</span>
+                                    <span>•</span>
+                                    <span>5 min</span>
+                                </div>
+
+                                <h3 class="mt-4 text-2xl font-light leading-tight text-[#263b2a]">
+                                    A slower way to experience nature in Ghana
+                                </h3>
+
+                                <p class="mt-4 text-sm leading-7 text-gray-600">
+                                    Why slowing down can change the way you
+                                    experience a destination.
+                                </p>
+
+                                <a
+                                    href="#"
+                                    class="mt-6 inline-flex items-center gap-2 text-sm text-[#263b2a] underline underline-offset-4"
+                                >
+                                    Read article
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="size-4"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Article 3 -->
+                        <article class="group overflow-hidden rounded-[1.75rem] bg-white">
+                            <div class="relative h-72 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1000&q=85"
+                                    alt="Ghana culture and community"
+                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                                />
+                            </div>
+
+                            <div class="p-6 md:p-7">
+                                <div class="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
+                                    <span>Culture</span>
+                                    <span>•</span>
+                                    <span>7 min</span>
+                                </div>
+
+                                <h3 class="mt-4 text-2xl font-light leading-tight text-[#263b2a]">
+                                    Meeting Ghana beyond the guidebook
+                                </h3>
+
+                                <p class="mt-4 text-sm leading-7 text-gray-600">
+                                    The people, traditions, food, and everyday
+                                    moments that shape the Ghanaian experience.
+                                </p>
+
+                                <a
+                                    href="#"
+                                    class="mt-6 inline-flex items-center gap-2 text-sm text-[#263b2a] underline underline-offset-4"
+                                >
+                                    Read article
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="size-4"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Article 4 -->
+                        <article class="group overflow-hidden rounded-[1.75rem] bg-white">
+                            <div class="relative h-72 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85"
+                                    alt="Ghana food"
+                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                                />
+                            </div>
+
+                            <div class="p-6 md:p-7">
+                                <div class="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
+                                    <span>Food</span>
+                                    <span>•</span>
+                                    <span>5 min</span>
+                                </div>
+
+                                <h3 class="mt-4 text-2xl font-light leading-tight text-[#263b2a]">
+                                    Food is part of the journey
+                                </h3>
+
+                                <p class="mt-4 text-sm leading-7 text-gray-600">
+                                    Discover the connection between Ghanaian
+                                    food, farming, and place.
+                                </p>
+
+                                <a
+                                    href="#"
+                                    class="mt-6 inline-flex items-center gap-2 text-sm text-[#263b2a] underline underline-offset-4"
+                                >
+                                    Read article
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="size-4"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Article 5 -->
+                        <article class="group overflow-hidden rounded-[1.75rem] bg-white">
+                            <div class="relative h-72 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"
+                                    alt="Travel in Ghana"
+                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                                />
+                            </div>
+
+                            <div class="p-6 md:p-7">
+                                <div class="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
+                                    <span>Travel Guide</span>
+                                    <span>•</span>
+                                    <span>8 min</span>
+                                </div>
+
+                                <h3 class="mt-4 text-2xl font-light leading-tight text-[#263b2a]">
+                                    Planning your first rural Ghana escape
+                                </h3>
+
+                                <p class="mt-4 text-sm leading-7 text-gray-600">
+                                    What to know before leaving the city and
+                                    exploring rural Ghana.
+                                </p>
+
+                                <a
+                                    href="#"
+                                    class="mt-6 inline-flex items-center gap-2 text-sm text-[#263b2a] underline underline-offset-4"
+                                >
+                                    Read article
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="size-4"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Article 6 -->
+                        <article class="group overflow-hidden rounded-[1.75rem] bg-white">
+                            <div class="relative h-72 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=85"
+                                    alt="Agrotourism in Ghana"
+                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                                />
+                            </div>
+
+                            <div class="p-6 md:p-7">
+                                <div class="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
+                                    <span>Agrotourism</span>
+                                    <span>•</span>
+                                    <span>6 min</span>
+                                </div>
+
+                                <h3 class="mt-4 text-2xl font-light leading-tight text-[#263b2a]">
+                                    What makes an agrotourism experience
+                                    different?
+                                </h3>
+
+                                <p class="mt-4 text-sm leading-7 text-gray-600">
+                                    Exploring the connection between travel,
+                                    farming, nature, and local communities.
+                                </p>
+
+                                <a
+                                    href="#"
+                                    class="mt-6 inline-flex items-center gap-2 text-sm text-[#263b2a] underline underline-offset-4"
+                                >
+                                    Read article
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="size-4"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="mt-12 text-center">
+                        <a
+                            href="#"
+                            class="inline-flex items-center gap-2 rounded-full border border-[#263b2a] px-7 py-3 text-sm text-[#263b2a] transition hover:bg-[#263b2a] hover:text-white"
+                        >
+                            View all stories
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-4"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="bg-white py-20 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto max-w-5xl text-center">
+                    <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#66705f]">
+                        Explore by topic
+                    </p>
+
+                    <div class="mt-8 flex flex-wrap justify-center gap-3">
+                        <a
+                            href="#"
+                            class="rounded-full border border-gray-300 px-5 py-2.5 text-sm text-gray-700 transition hover:border-[#263b2a] hover:bg-[#263b2a] hover:text-white"
+                        >
+                            Travel Guides
+                        </a>
+
+                        <a
+                            href="#"
+                            class="rounded-full border border-gray-300 px-5 py-2.5 text-sm text-gray-700 transition hover:border-[#263b2a] hover:bg-[#263b2a] hover:text-white"
+                        >
+                            Rural Ghana
+                        </a>
+
+                        <a
+                            href="#"
+                            class="rounded-full border border-gray-300 px-5 py-2.5 text-sm text-gray-700 transition hover:border-[#263b2a] hover:bg-[#263b2a] hover:text-white"
+                        >
+                            Nature
+                        </a>
+
+                        <a
+                            href="#"
+                            class="rounded-full border border-gray-300 px-5 py-2.5 text-sm text-gray-700 transition hover:border-[#263b2a] hover:bg-[#263b2a] hover:text-white"
+                        >
+                            Culture
+                        </a>
+
+                        <a
+                            href="#"
+                            class="rounded-full border border-gray-300 px-5 py-2.5 text-sm text-gray-700 transition hover:border-[#263b2a] hover:bg-[#263b2a] hover:text-white"
+                        >
+                            Food
+                        </a>
+
+                        <a
+                            href="#"
+                            class="rounded-full border border-gray-300 px-5 py-2.5 text-sm text-gray-700 transition hover:border-[#263b2a] hover:bg-[#263b2a] hover:text-white"
+                        >
+                            Agrotourism
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-[#263b2a] py-20 text-white md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto max-w-3xl text-center">
+                    <p class="text-xs font-medium uppercase tracking-[0.35em] text-white/60">
+                        Experience it yourself
+                    </p>
+
+                    <h2 class="mt-5 text-4xl font-light tracking-tight md:text-5xl">
+                        Don't just read about Ghana. Come experience it.
+                    </h2>
+
+                    <p class="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/70 md:text-base">
+                        Explore our activities, tours, and stays at Adoko Farms.
+                    </p>
+
+                    <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+                        <a
+                            href="/tours"
+                            class="inline-flex justify-center rounded-full bg-white px-7 py-3 text-sm text-[#263b2a] transition hover:bg-white/90"
+                        >
+                            Explore tours
+                        </a>
+
+                        <a
+                            href="/contact"
+                            class="inline-flex justify-center rounded-full border border-white/40 px-7 py-3 text-sm transition hover:bg-white hover:text-[#263b2a]"
+                        >
+                            Contact us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </Page>
+</Layout>

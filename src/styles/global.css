@@ -8,7 +8,7 @@
 
 @theme {
     --font-sans: 'Sacramento', cursive;
-    --font-display: 'Figtree', sans-serif;
+      --font-display: 'Figtree', sans-serif;
 }
 
 :root {
