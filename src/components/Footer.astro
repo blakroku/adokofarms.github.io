@@ -1,15 +1,16 @@
 ---
+import Arrow from "./icons/Arrow.astro";
 ---
 
-<footer class="bg-[#4B5160] text-white">
+<footer class="py-32 px-4 sm:px-0">
     <!-- Main Footer -->
-    <div class="container mx-auto px-6 py-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+    <div class="container mx-auto px-12 py-20 bg-[#003964] rounded-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
             <!-- Brand -->
-            <div class="lg:col-span-1">
+            <div class="lg:col-span-6">
                 <div class="mb-6">
                     <a href="/" class="text-2xl font-medium">
-                        Adoko Farms
+                        Adoko Farms Eco Resort
                     </a>
                 </div>
 
@@ -21,31 +22,21 @@
                     couples, schools and small groups.
                 </p>
 
-                <a
-                    href="/about"
-                    class="inline-flex items-center gap-2 mt-8 text-sm border-b border-white/40 pb-1"
-                >
-                    Discover our experiences
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-4"
+                <div class="flex items-center gap-2 mt-8">
+                    <Arrow color="white" />
+
+                    <a
+                        href="/about"
+                        class="text-sm border-b border-white/40 pb-1 font-light"
                     >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                        />
-                    </svg>
-                </a>
+                        <span>Discover our experiences</span>
+                    </a>
+                </div>
             </div>
 
             <!-- Explore -->
-            <div>
-                <h3 class="font-medium mb-6">Explore</h3>
+            <div class="lg:col-span-2">
+                <h3 class="text-xl font-light mb-6">Explore</h3>
 
                 <nav class="flex flex-col gap-4 text-white/60">
                     <a href="/tours" class="hover:text-white transition">
@@ -71,10 +62,10 @@
             </div>
 
             <!-- Resources -->
-            <div>
-                <h3 class="text-sm font-medium mb-6">Resources</h3>
+            <div class="lg:col-span-2">
+                <h3 class="text-xl font-light mb-6">Resources</h3>
 
-                <nav class="flex flex-col gap-4 text-sm text-white/60">
+                <nav class="flex flex-col gap-4 text-white/60">
                     <a href="/blog" class="hover:text-white transition">
                         Blog
                     </a>
@@ -94,44 +85,24 @@
             </div>
 
             <!-- Contact -->
-            <div>
-                <h3 class="text-sm font-medium mb-6">Get in touch</h3>
-
-                <div class="space-y-4 text-sm text-white/60">
-                    <p>Ghana</p>
-
-                    <a
-                        href="mailto:hello@adokofarms.com"
-                        class="block hover:text-white transition"
-                    >
-                        booking@adokofarms.com
-                    </a>
-
-                    <a
-                        href="tel:+233535180741"
-                        class="block hover:text-white transition"
-                    >
-                        +233 53 518 0741
-                    </a>
-                </div>
+            <div class="lg:col-span-2">
+                <h3 class="text-xl font-light mb-6">Let's connect</h3>
 
                 <!-- Social -->
-                <div class="flex gap-3 mt-8">
+                <div class="flex flex-col gap-4 mt-8">
                     <a
                         href="https://www.instagram.com/adokofarms"
-                        target="_blank"
-                        aria-label="Instagram"
-                        class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition"
+                        class="flex gap-2 items-center font-light"
                     >
-                        <span class="text-xs">
+                        <span class="text-white">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="32"
-                                height="32"
+                                width="26"
+                                height="26"
                                 viewBox="0 0 24 24"
                                 fill="none"
-                                stroke="#000000"
-                                stroke-width="2"
+                                stroke="#fff"
+                                stroke-width="1.2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                                 class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
@@ -146,23 +117,23 @@
                                 <path d="M16.5 7.5v.01" />
                             </svg>
                         </span>
+                        <span class="font-light text-white/60">Instagram</span>
                     </a>
 
                     <a
-                        href="https://www.facebook.com/adokofarms/"
+                        href="https://www.facebook.com/adokofarms"
+                        class="flex gap-2 items-center"
                         target="_blank"
-                        aria-label="Facebook"
-                        class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition"
                     >
-                        <span class="text-xs">
+                        <span class="text-white">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="32"
-                                height="32"
+                                width="26"
+                                height="26"
                                 viewBox="0 0 24 24"
                                 fill="none"
-                                stroke="#000000"
-                                stroke-width="2"
+                                stroke="#fff"
+                                stroke-width="1.2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                                 class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"
@@ -175,23 +146,23 @@
                                 <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
                             </svg>
                         </span>
+                        <span class="font-light text-white/60">Facebook</span>
                     </a>
 
                     <a
                         href="https://wa.me/233535180741"
+                        class="flex gap-2 items-center"
                         target="_blank"
-                        aria-label="WhatsApp"
-                        class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition"
                     >
-                        <span class="text-xs">
+                        <span class="text-white">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="32"
-                                height="32"
+                                width="26"
+                                height="26"
                                 viewBox="0 0 24 24"
                                 fill="none"
-                                stroke="#000000"
-                                stroke-width="2"
+                                stroke="#fff"
+                                stroke-width="1.2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                                 class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"
@@ -205,72 +176,27 @@
                                 <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
                             </svg>
                         </span>
+                        <span class="font-light text-white/60">Whatsapp</span>
                     </a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Newsletter -->
-        <!--<div class="border-t border-white/10 mt-20 pt-12">-->
-
-        <!--    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">-->
-
-        <!--        <div class="max-w-lg">-->
-
-        <!--            <p class="text-2xl md:text-3xl font-light">-->
-        <!--                Stay connected with Ghana.-->
-        <!--            </p>-->
-
-        <!--            <p class="mt-3 text-sm text-white/50 leading-relaxed">-->
-        <!--                Get travel inspiration, new experiences and occasional-->
-        <!--                updates from Adoko Farms.-->
-        <!--            </p>-->
-
-        <!--        </div>-->
-
-        <!--        <form class="w-full lg:w-100">-->
-
-        <!--            <div class="flex border-b border-white/30 pb-3">-->
-
-        <!--                <input-->
-        <!--                        type="email"-->
-        <!--                        placeholder="Your email address"-->
-        <!--                        class="flex-1 bg-transparent outline-none text-sm-->
-        <!--                           placeholder:text-white/40"-->
-        <!--                />-->
-
-        <!--                <button-->
-        <!--                        type="submit"-->
-        <!--                        class="text-sm font-medium hover:text-white/70 transition"-->
-        <!--                >-->
-        <!--                    Subscribe-->
-        <!--                </button>-->
-
-        <!--            </div>-->
-
-        <!--        </form>-->
-
-        <!--    </div>-->
-
-        <!--</div>-->
-
-        <!-- Bottom -->
-        <div class="border-t border-white/10 mt-12 pt-6">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                <p class="text-xs text-white/40">
-                    © {new Date().getFullYear()} Adoko Farms. All rights
-                    reserved.
+    <!-- Bottom -->
+    <div class="container mx-auto border-t border-white/10 mt-3 pt-6 text-[#908d95] px-4 sm:px-0 text-sm">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="flex flex-wrap gap-6">
+                <p class="text-[#180148]">
+                    &copy; {new Date().getFullYear()} Adoko Farms
                 </p>
+                <a href="#" class="hover:text-gray-700 transition">
+                    Privacy Policy
+                </a>
 
-                <div class="flex flex-wrap gap-6 text-xs text-white/40">
-                    <a href="#" class="hover:text-white transition">
-                        Privacy Policy
-                    </a>
-
-                    <a href="#" class="hover:text-white transition">
-                        Terms & Conditions
-                    </a>
-                </div>
+                <a href="#" class="hover:text-gray-700 transition">
+                    Terms & Conditions
+                </a>
             </div>
         </div>
     </div>
