@@ -2,12 +2,13 @@
 import astroLogo from "../assets/astro.svg";
 import adokofarmsLogo from "../assets/adokofarmslogo.png";
 import background from "../assets/background.svg";
+import messenger from "../assets/messenger.webp";
 
 const whatsappMe = "https://wa.me/233535180741";
 ---
 
 <header
-    x-data="{ openMenu: false, openResourceMenu: false }"
+    x-data="{ openMenu: true, openResourceMenu: false }"
     class="px-4 sm:px-0 border-b border-stone-200"
 >
     <nav class="container mx-auto flex items-center justify-between py-4">
@@ -185,5 +186,42 @@ const whatsappMe = "https://wa.me/233535180741";
                 </li>
             </ul>
         </nav>
+
+        <!-- Mobile navigation footer -->
+        <footer class="px-4 md:hidden bg-white text-black">
+            <section class="p-12 mt-12 rounded-md">
+                <header class="flex gap-4">
+                    <div>
+                        <img
+                            src={messenger.src}
+                            class="inline-block w-28 rounded-full"
+                        />
+                    </div>
+                    <div>
+                        <div class="mb-3 text-sm uppercase font-bold">
+                            Need any help?
+                        </div>
+                        <div class="text-sm mb-8">
+                            From bookings to general enquiries and anything in
+                            between, our team are on hand to help.
+                        </div>
+                    </div>
+                </header>
+                <div class="space-y-2">
+                    <a
+                        href="https://wa.me/233535180741"
+                        class="block text-center rounded-sm text-sm px-4 py-1.5 w-full font-light bg-[#003964] text-white"
+                    >
+                        Talk to us
+                    </a>
+                    <a
+                        href="/contact"
+                        class="block text-center rounded-sm text-sm px-4 py-1.5 w-full font-light bg-[#003964] text-white"
+                    >
+                        Send Enquiry
+                    </a>
+                </div>
+            </section>
+        </footer>
     </div>
 </header>
