@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 @import "tailwindcss";
 
@@ -103,4 +104,14 @@ body {
 .activity-link:hover {
     @apply px-7 py-2;
     /*padding: 1rem 3rem; /* Expands left and right padding */
+}
+
+/* Headers */
+h1 {
+    @apply text-6xl md:text-[104px];
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    /*font-size: 103px;*/
+    /*line-height: 104px;*/
 }
