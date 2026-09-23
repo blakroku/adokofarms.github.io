@@ -3,6 +3,7 @@ import astroLogo from "../assets/astro.svg";
 import adokofarmsLogo from "../assets/adokofarmslogo.png";
 import background from "../assets/background.svg";
 import messenger from "../assets/messenger.webp";
+import sonar from "../assets/sonar.svg";
 
 const whatsappMe = "https://wa.me/233535180741";
 ---
@@ -13,18 +14,19 @@ const whatsappMe = "https://wa.me/233535180741";
 >
     <nav class="container mx-auto flex items-center justify-between py-4">
         <div class="text-black uppercase text-xl font-black">
-            <a href="/">Adoko Farms</a>
+            <!-- <a href="/">Adoko Farms</a> -->
+            <img src={sonar.src} alt="Adoko Farms" class="w-26 sm:w-32" />
         </div>
 
         <button
             @click="openMenu = !openMenu"
             type="button"
-            class="px-5 py-2 rounded-xl flex items-center gap-2 cursor-pointer text-black bg-white hover:bg-blue-800 hover:text-white"
+            class="px-2 py-1 rounded-md flex items-center gap-2 cursor-pointer text-black bg-white hover:bg-blue-800 hover:text-white"
         >
-            <!-- <span class="flex flex-col gap-1">
-                <span class="block w-5 h-0.5 bg-black"></span>
-                <span class="block w-5 h-0.5 bg-black"></span>
-                <span class="block w-5 h-0.5 bg-black"></span>
+            <!-- <span class="flex flex-col gap-0.5">
+                <span class="block w-5 h-1 rounded-full bg-black hover:bg-white"></span>
+                <span class="block w-5 h-1 rounded-full bg-black"></span>
+                <span class="block w-5 h-1 rounded-full bg-black"></span>
             </span> -->
 
             <span>
@@ -32,7 +34,7 @@ const whatsappMe = "https://wa.me/233535180741";
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
+                    stroke-width="2.5"
                     stroke="currentColor"
                     class="size-6"
                 >
@@ -44,7 +46,7 @@ const whatsappMe = "https://wa.me/233535180741";
                 </svg>
             </span>
 
-            <span class="">Menu</span>
+            <span class="font-light sm:font-semibold">Menu</span>
         </button>
     </nav>
 
