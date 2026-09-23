@@ -108,7 +108,7 @@ body {
 
 /* Headers */
 h1 {
-    @apply text-6xl md:text-[104px];
+    @apply text-5xl sm:text-6xl md:text-[104px];
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 800;
