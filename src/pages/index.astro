@@ -5,15 +5,17 @@ import Experience from "../components/Experience.astro";
 import WhyUs from "../components/WhyUs.astro";
 import Activities from "../components/Activities.astro";
 import Reviews from "../components/Reviews.astro";
+import Hero from "../components/Hero.astro";
 
 const title = "Welcome home";
 ---
 
 <Layout title={title}>
-  <Page>
-    <Experience />
-    <WhyUs />
-    <Activities />
-    <Reviews />
-  </Page>
+    <Page>
+        <Hero />
+        <Experience />
+        <WhyUs />
+        <Activities />
+        <Reviews />
+    </Page>
 </Layout>

@@ -8,10 +8,12 @@ const whatsappMe = "https://wa.me/233535180741";
 
 <header
     x-data="{ openMenu: false, openResourceMenu: false }"
-    class="px-4 sm:px-0"
+    class="px-4 sm:px-0 border-b border-stone-200"
 >
     <nav class="container mx-auto flex items-center justify-between py-4">
-        <div class="text-black uppercase text-xl font-black">Adoko Farms</div>
+        <div class="text-black uppercase text-xl font-black">
+            <a href="/">Adoko Farms</a>
+        </div>
 
         <button
             @click="openMenu = !openMenu"
@@ -178,7 +180,7 @@ const whatsappMe = "https://wa.me/233535180741";
                                 />
                             </svg>
                         </span>
-                        <span class="font-light">Book your experience</span>
+                        <span class="font-light">Book Your Experience</span>
                     </a>
                 </li>
             </ul>
