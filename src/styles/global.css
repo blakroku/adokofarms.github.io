@@ -115,3 +115,7 @@ h1 {
     /*font-size: 103px;*/
     /*line-height: 104px;*/
 }
+
+.header-level-3 {
+    @apply text-4xl md:text-[50px];
+}
