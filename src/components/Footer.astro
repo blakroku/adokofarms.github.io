@@ -3,8 +3,356 @@ import Arrow from "./icons/Arrow.astro";
 ---
 
 <footer class="py-32 px-4 sm:px-0">
+    <div class="container mx-auto px-12 py-32">
+        <header class="text-center space-y-4">
+            <div>
+                <span class="bg-[#252525] px-3 py-2 rounded-full text-xs text-white">
+                    FAQs
+                </span>
+            </div>
+            <div>
+                <h3 class="text-5xl font-semibold">
+                    Frequently Asked Questions
+                </h3>
+            </div>
+            <div class="text-[16px]">
+                Can't find your answer?{" "}
+                <a href="/contact" class="font-semibold">
+                    info@adokofarms.com
+                </a>
+            </div>
+        </header>
+        <main class="mt-12">
+            <section class="w-[50%] mx-auto space-y-3">
+                <div
+                    class="border border-stone-200 rounded-md p-4 bg-[#EBE8E5]"
+                    x-data="{ open: false }"
+                >
+                    <div
+                        class="flex justify-between cursor-pointer"
+                        @click="open = !open"
+                    >
+                        <h3 class="font-semibold">
+                            What is Adoko Farms and What do we do?
+                        </h3>
+                        <span>
+                            <span x-show="!open">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M12 4.5v15m7.5-7.5h-15"
+                                    />
+                                </svg>
+                            </span>
+                            <span x-show="open">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M5 12h14"
+                                    />
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="tracking-wide mt-6 font-light" x-show="open">
+                        lorem ipsum graham tech cloned with more facilities. And
+                        another long message that was not intended for certain
+                        aspects. lorem ipsum graham tech cloned with more
+                        facilities. And another long message that was not
+                        intended for certain aspects.
+                    </div>
+                </div>
+
+                <div
+                    class="border border-stone-200 rounded-md p-4 bg-[#EBE8E5]"
+                    x-data="{ open: false }"
+                >
+                    <div
+                        class="flex justify-between cursor-pointer"
+                        @click="open = !open"
+                    >
+                        <h3 class="font-semibold">
+                            Who do we serve in the tourism industry?
+                        </h3>
+                        <span>
+                            <span x-show="!open">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M12 4.5v15m7.5-7.5h-15"
+                                    />
+                                </svg>
+                            </span>
+                            <span x-show="open">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M5 12h14"
+                                    />
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="tracking-wide font-light mt-6" x-show="open">
+                        lorem ipsum graham tech cloned with more facilities. And
+                        another long message that was not intended for certain
+                        aspects.
+                    </div>
+                </div>
+
+                <div
+                    class="border border-stone-200 rounded-md p-4 bg-[#EBE8E5]"
+                    x-data="{ open: false }"
+                >
+                    <div
+                        class="flex justify-between cursor-pointer"
+                        @click="open = !open"
+                    >
+                        <h3 class="font-semibold">How much fun can I have?</h3>
+                        <span>
+                            <span x-show="!open">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M12 4.5v15m7.5-7.5h-15"
+                                    />
+                                </svg>
+                            </span>
+                            <span x-show="open">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M5 12h14"
+                                    />
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="tracking-wide font-light mt-6" x-show="open">
+                        lorem ipsum graham tech cloned with more facilities. And
+                        another long message that was not intended for certain
+                        aspects.
+                    </div>
+                </div>
+
+                <div
+                    class="border border-stone-200 rounded-md p-4 bg-[#EBE8E5]"
+                    x-data="{ open: false }"
+                >
+                    <div
+                        class="flex justify-between cursor-pointer"
+                        @click="open = !open"
+                    >
+                        <h3 class="font-semibold">
+                            Do I nee to know anything about Adoko Farms?
+                        </h3>
+                        <span>
+                            <span x-show="!open">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M12 4.5v15m7.5-7.5h-15"
+                                    />
+                                </svg>
+                            </span>
+                            <span x-show="open">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M5 12h14"
+                                    />
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="tracking-wide font-light mt-6" x-show="open">
+                        lorem ipsum graham tech cloned with more facilities. And
+                        another long message that was not intended for certain
+                        aspects.
+                    </div>
+                </div>
+
+                <div
+                    class="border border-stone-200 rounded-md p-4 bg-[#EBE8E5]"
+                    x-data="{ open: false }"
+                >
+                    <div
+                        class="flex justify-between cursor-pointer"
+                        @click="open = !open"
+                    >
+                        <h3 class="font-semibold">
+                            Can I host my occasion at your place?
+                        </h3>
+                        <span>
+                            <span x-show="!open">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M12 4.5v15m7.5-7.5h-15"
+                                    />
+                                </svg>
+                            </span>
+                            <span x-show="open">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M5 12h14"
+                                    />
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="tracking-wide font-light mt-6" x-show="open">
+                        lorem ipsum graham tech cloned with more facilities. And
+                        another long message that was not intended for certain
+                        aspects.
+                    </div>
+                </div>
+
+                <div
+                    class="border border-stone-200 rounded-md p-4 bg-[#EBE8E5]"
+                    x-data="{ open: false }"
+                >
+                    <div
+                        class="flex justify-between cursor-pointer"
+                        @click="open = !open"
+                    >
+                        <h3 class="font-semibold">
+                            Anything else worth knowing?
+                        </h3>
+                        <span>
+                            <span x-show="!open">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M12 4.5v15m7.5-7.5h-15"
+                                    />
+                                </svg>
+                            </span>
+                            <span x-show="open">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M5 12h14"
+                                    />
+                                </svg>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="tracking-wide font-light mt-6" x-show="open">
+                        lorem ipsum graham tech cloned with more facilities. And
+                        another long message that was not intended for certain
+                        aspects.
+                    </div>
+                </div>
+
+                <footer class="mt-8 text-center">
+                    <a href="/faqs" class="hover:underline">
+                        Learn more
+                    </a>
+                </footer>
+            </section>
+        </main>
+    </div>
+
     <!-- Main Footer -->
-    <div class="container mx-auto px-12 py-20 bg-[#003964] rounded-2xl">
+    <div class="container mx-auto px-12 py-20 bg-[#252525] rounded-2xl text-white/60">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
             <!-- Brand -->
             <div class="lg:col-span-6">
@@ -14,7 +362,7 @@ import Arrow from "./icons/Arrow.astro";
                     </a>
                 </div>
 
-                <p class="text-white/60 leading-relaxed max-w-sm">
+                <p class="leading-relaxed max-w-sm">
                     We are working farm and agrotourism destination in
                     Akropong-Akuapem, about 54km from Accra. We offer farm
                     stays, camping, guided farm tours, farm-to-table dining,
@@ -38,7 +386,7 @@ import Arrow from "./icons/Arrow.astro";
             <div class="lg:col-span-2">
                 <h3 class="text-xl font-light mb-6">Explore</h3>
 
-                <nav class="flex flex-col gap-4 text-white/60">
+                <nav class="flex flex-col gap-4">
                     <a href="/tours" class="hover:text-white transition">
                         Tours
                     </a>
@@ -65,7 +413,7 @@ import Arrow from "./icons/Arrow.astro";
             <div class="lg:col-span-2">
                 <h3 class="text-xl font-light mb-6">Resources</h3>
 
-                <nav class="flex flex-col gap-4 text-white/60">
+                <nav class="flex flex-col gap-4">
                     <a href="/blog" class="hover:text-white transition">
                         Blog
                     </a>
