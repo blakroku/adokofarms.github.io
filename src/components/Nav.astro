@@ -1,9 +1,9 @@
 ---
 import astroLogo from "../assets/astro.svg";
-import adokofarmsLogo from "../assets/adoko-farms-logo.webp";
 import background from "../assets/background.svg";
 import messenger from "../assets/messenger.webp";
 import sonar from "../assets/sonar.svg";
+import Brand from "./utilities/brand.astro";
 
 const whatsappMe = "https://wa.me/233535180741";
 ---
@@ -13,13 +13,7 @@ const whatsappMe = "https://wa.me/233535180741";
     class="px-4 sm:px-0 border-b border-stone-200"
 >
     <nav class="container mx-auto flex items-center justify-between py-4">
-        <div class="">
-            <!-- <a href="/">Adoko Farms</a> -->
-            <a href="/">
-                <img src={adokofarmsLogo.src} alt="Adoko Farms" class="w-14" />
-            </a>
-        </div>
-
+        <Brand />
         <button
             @click="openMenu = !openMenu"
             type="button"
