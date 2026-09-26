@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
 @import "tailwindcss";
 
@@ -34,6 +35,11 @@ body {
 
 .lavish-description {
     @apply font-sans text-7xl;
+}
+
+/* Text */
+.brush-font {
+    font-family: "Caveat Brush", cursive;
 }
 
 /* Buttons */
