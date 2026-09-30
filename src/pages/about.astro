@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Page from "../components/Page.astro";
+import headerImage from "../assets/ad2.png";
 
 const title = "About us";
 ---
@@ -8,7 +9,7 @@ const title = "About us";
 <Layout title={title}>
     <Page>
         <section class="container mx-auto">
-            <header class="text-center py-32 bg-[#252525] text-white">
+            <header class="text-center py-32 bg-[#252525] text-white bg-[url('../assets/ad.png')] bg-cover bg-center overflow-hidden relative">
                 <div>
                     <div>
                         <span class="text-sm uppercase tracking-widest">
@@ -25,7 +26,7 @@ const title = "About us";
                 </div>
             </header>
 
-            <section class="bg-white px-4 py-12 md:p-32 rounded-b-3xl w-full md:container md:mx-auto">
+            <section class="bg-white px-4 py-32 md:p-32 rounded-b-3xl w-full md:container md:mx-auto">
                 <h3 class="font-black text-4xl mb-6">
                     Turning Every Journey into an Everlasting Memory
                 </h3>
