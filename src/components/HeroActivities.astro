@@ -1,20 +1,14 @@
----
-import { astro } from "astro/hono";
-
-const { heroTitle, firstHeroTitle, secondHeroTitle } = Astro.props;
----
-
 <section>
     <div class="bg-blue-900 container mx-auto px-12 md:px-0 pt-18 h-150 sm:h-200 md:mb-22 rounded-bl-lg sm:rounded-br-[200px] bg-[url('../assets/ad2.png')] bg-cover bg-center overflow-hidden relative">
         <div class="flex justify-center mb-3">
             <div class="border-2 text-white font-semibold border-white inline-flex justify-center px-5 py-2 rounded-full text-sm tracking-widest uppercase">
-                {heroTitle}
+                Our Activities
             </div>
         </div>
 
         <h1 class="text-center text-white">
-            <span class="block">{firstHeroTitle}</span>
-            <span class="block">{secondHeroTitle}</span>
+            <span class="block">Explore</span>
+            <span class="block">our activities</span>
         </h1>
     </div>
 </section>

@@ -1,31 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Page from "../components/Page.astro";
-
+import Hero from "../components/Hero.astro";
 const title = "Blog";
 ---
 
 <Layout title={title}>
     <Page>
-        <!-- Hero -->
-        <section class="relative overflow-hidden bg-[#f4f1e8] py-24 md:py-32">
-            <div class="container mx-auto px-6">
-                <div class="mx-auto max-w-4xl text-center">
-                    <p class="text-xs font-medium uppercase tracking-[0.35em] text-[#66705f]">
-                        Journal
-                    </p>
-
-                    <h1 class="mt-5 text-5xl font-light tracking-tight text-[#263b2a] md:text-7xl">
-                        Stories from Ghana
-                    </h1>
-
-                    <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600 md:text-lg">
-                        Travel stories, local knowledge, guides, and inspiration
-                        for discovering Ghana beyond the usual tourist paths.
-                    </p>
-                </div>
-            </div>
-        </section>
+        <Hero
+            heroTitle="Blog"
+            firstHeroTitle="Stories"
+            secondHeroTitle="from Ghana"
+        />
 
         <!-- Featured Article -->
         <section class="bg-white py-20 md:py-28">
@@ -433,96 +419,6 @@ const title = "Blog";
                                     d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
                                 />
                             </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Categories -->
-        <section class="bg-white py-20 md:py-24">
-            <div class="container mx-auto px-6">
-                <div class="mx-auto max-w-5xl text-center">
-                    <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#66705f]">
-                        Explore by topic
-                    </p>
-
-                    <div class="mt-8 flex flex-wrap justify-center gap-3">
-                        <a
-                            href="#"
-                            class="rounded-full border border-gray-300 px-5 py-2.5 text-sm text-gray-700 transition hover:border-[#263b2a] hover:bg-[#263b2a] hover:text-white"
-                        >
-                            Travel Guides
-                        </a>
-
-                        <a
-                            href="#"
-                            class="rounded-full border border-gray-300 px-5 py-2.5 text-sm text-gray-700 transition hover:border-[#263b2a] hover:bg-[#263b2a] hover:text-white"
-                        >
-                            Rural Ghana
-                        </a>
-
-                        <a
-                            href="#"
-                            class="rounded-full border border-gray-300 px-5 py-2.5 text-sm text-gray-700 transition hover:border-[#263b2a] hover:bg-[#263b2a] hover:text-white"
-                        >
-                            Nature
-                        </a>
-
-                        <a
-                            href="#"
-                            class="rounded-full border border-gray-300 px-5 py-2.5 text-sm text-gray-700 transition hover:border-[#263b2a] hover:bg-[#263b2a] hover:text-white"
-                        >
-                            Culture
-                        </a>
-
-                        <a
-                            href="#"
-                            class="rounded-full border border-gray-300 px-5 py-2.5 text-sm text-gray-700 transition hover:border-[#263b2a] hover:bg-[#263b2a] hover:text-white"
-                        >
-                            Food
-                        </a>
-
-                        <a
-                            href="#"
-                            class="rounded-full border border-gray-300 px-5 py-2.5 text-sm text-gray-700 transition hover:border-[#263b2a] hover:bg-[#263b2a] hover:text-white"
-                        >
-                            Agrotourism
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="bg-[#263b2a] py-20 text-white md:py-24">
-            <div class="container mx-auto px-6">
-                <div class="mx-auto max-w-3xl text-center">
-                    <p class="text-xs font-medium uppercase tracking-[0.35em] text-white/60">
-                        Experience it yourself
-                    </p>
-
-                    <h2 class="mt-5 text-4xl font-light tracking-tight md:text-5xl">
-                        Don't just read about Ghana. Come experience it.
-                    </h2>
-
-                    <p class="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/70 md:text-base">
-                        Explore our activities, tours, and stays at Adoko Farms.
-                    </p>
-
-                    <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-                        <a
-                            href="/tours"
-                            class="inline-flex justify-center rounded-full bg-white px-7 py-3 text-sm text-[#263b2a] transition hover:bg-white/90"
-                        >
-                            Explore tours
-                        </a>
-
-                        <a
-                            href="/contact"
-                            class="inline-flex justify-center rounded-full border border-white/40 px-7 py-3 text-sm transition hover:bg-white hover:text-[#263b2a]"
-                        >
-                            Contact us
                         </a>
                     </div>
                 </div>

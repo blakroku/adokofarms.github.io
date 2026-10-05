@@ -1,52 +1,33 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Page from "../components/Page.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <Layout title="Activities">
     <Page>
         <!-- Hero -->
-        <section class="relative overflow-hidden bg-[#f4f1e8] py-24 md:py-32">
-            <div class="container mx-auto px-6">
-                <div class="mx-auto max-w-4xl text-center">
-                    <p class="text-xs font-medium uppercase tracking-[0.35em] text-[#66705f]">
-                        Experiences
-                    </p>
-
-                    <h1 class="mt-5 text-5xl font-light tracking-tight text-[#263b2a] md:text-7xl">
-                        Explore our activities
-                    </h1>
-
-                    <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600 md:text-lg">
-                        Discover authentic experiences that take you beyond the
-                        usual tourist trail and into the landscapes, culture,
-                        and everyday life of rural Ghana.
-                    </p>
-                </div>
-            </div>
-        </section>
+        <Hero
+            heroTitle="Our activities"
+            firstHeroTitle="Explore our"
+            secondHeroTitle="Activities"
+        />
 
         <!-- Activities -->
-        <section class="bg-white py-20 md:py-28">
+        <section class="bg-[#EAE8E5] py-20 md:py-28">
             <div class="container mx-auto px-6">
                 <div class="mx-auto max-w-7xl">
                     <!-- Section heading -->
                     <div class="mb-12 flex flex-col gap-4 md:mb-16 md:flex-row md:items-end md:justify-between">
                         <div>
                             <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#66705f]">
-                                Choose your experience
+                                Choose your activities
                             </p>
 
                             <h2 class="mt-3 text-4xl font-light tracking-tight text-[#263b2a] md:text-5xl">
                                 Find your escape
                             </h2>
                         </div>
-
-                        <p class="max-w-md text-sm leading-7 text-gray-500 md:text-right">
-                            From quiet walks through nature to immersive farm
-                            and village experiences, there is something for
-                            every kind of traveller.
-                        </p>
                     </div>
 
                     <!-- Activity Grid -->
@@ -364,39 +345,6 @@ import Page from "../components/Page.astro";
         </section>
 
         <!-- CTA -->
-        <section class="bg-[#263b2a] py-20 text-white md:py-24">
-            <div class="container mx-auto px-6">
-                <div class="mx-auto max-w-3xl text-center">
-                    <p class="text-xs font-medium uppercase tracking-[0.35em] text-white/60">
-                        Your next escape
-                    </p>
-
-                    <h2 class="mt-5 text-4xl font-light tracking-tight md:text-5xl">
-                        Ready to experience rural Ghana?
-                    </h2>
-
-                    <p class="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/70 md:text-base">
-                        Choose an experience, plan your visit, and discover a
-                        different side of Ghana.
-                    </p>
-
-                    <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-                        <a
-                            href="/contact"
-                            class="inline-flex justify-center rounded-full bg-white px-7 py-3 text-sm text-[#263b2a] transition hover:bg-white/90"
-                        >
-                            Plan your visit
-                        </a>
-
-                        <a
-                            href="/accommodation"
-                            class="inline-flex justify-center rounded-full border border-white/40 px-7 py-3 text-sm transition hover:bg-white hover:text-[#263b2a]"
-                        >
-                            View accommodation
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- DATA -->
     </Page>
 </Layout>

@@ -2,14 +2,16 @@
 import Layout from "../layouts/Layout.astro";
 import Page from "../components/Page.astro";
 import headerImage from "../assets/ad2.png";
-import HeroAbout from "../components/HeroAbout.astro";
-
-const title = "About us";
+import Hero from "../components/Hero.astro";
 ---
 
-<Layout title={title}>
+<Layout title="About us">
     <Page>
-        <HeroAbout />
+        <Hero
+            heroTitle="About us"
+            firstHeroTitle="A different way"
+            secondHeroTitle="to experience Ghana"
+        />
 
         <section class="container mx-auto">
             <section class="px-4 py-32 md:p-32 rounded-b-3xl w-full md:container md:mx-auto">
