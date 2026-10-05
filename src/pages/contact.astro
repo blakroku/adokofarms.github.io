@@ -6,41 +6,38 @@ import Page from "../components/Page.astro";
 <Layout title="Contact">
     <Page>
         <!-- Contact Hero -->
-        <section class="relative overflow-hidden bg-[#f4f1e8] py-24 md:py-32">
-            <div class="container mx-auto px-6">
-                <div class="mx-auto max-w-4xl text-center">
-                    <p class="text-xs font-medium uppercase tracking-[0.35em] text-[#66705f]">
-                        Get in touch
-                    </p>
-
-                    <h1 class="mt-5 text-5xl font-light tracking-tight text-[#263b2a] md:text-7xl">
-                        We'd love to hear from you
-                    </h1>
-
-                    <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600 md:text-lg">
-                        Whether you're planning a farm stay, a day visit, or an
-                        experience in rural Ghana, we're here to help you plan
-                        your escape.
-                    </p>
+        <header class="container mx-auto text-center py-32 bg-[#252525] text-white bg-[url('../assets/ad.png')] bg-cover bg-center overflow-hidden relative">
+            <div>
+                <div>
+                    <span class="text-sm uppercase tracking-widest">
+                        Contact us
+                    </span>
                 </div>
+                <div class="pb-5">
+                    <span class="text-4xl md:text-5xl font-black flex flex-col gap-2 tracking-wide px-4 md:px-0">
+                        <span>We'd love to</span>
+                        <span>hear from you</span>
+                    </span>
+                </div>
+                <span class="w-10 h-1.5 rounded-full bg-[#F54A00] inline-block"></span>
             </div>
-        </section>
+        </header>
 
         <!-- Contact Content -->
-        <section class="bg-white py-20 md:py-28">
+        <section class="py-20 md:py-28">
             <div class="container mx-auto px-6">
                 <div class="mx-auto grid max-w-6xl gap-16 md:grid-cols-2 md:gap-24">
                     <!-- Contact Information -->
                     <div class="flex flex-col justify-center">
-                        <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#66705f]">
+                        <p class="text-xs font-medium uppercase tracking-[0.3em]">
                             Contact us
                         </p>
 
-                        <h2 class="mt-4 text-4xl font-light tracking-tight text-[#263b2a] md:text-5xl">
+                        <h2 class="mt-4 text-4xl font-light tracking-tight md:text-5xl">
                             Start planning your visit
                         </h2>
 
-                        <p class="mt-6 max-w-lg text-base leading-8 text-gray-600">
+                        <p class="mt-6 max-w-lg text-base leading-8">
                             Adoko Farms is a working farm and agrotourism
                             destination in Akropong-Akuapem, about 54km from
                             Accra. Reach out and let us know how we can make
@@ -50,7 +47,7 @@ import Page from "../components/Page.astro";
                         <div class="mt-10 space-y-7">
                             <!-- Location -->
                             <div class="flex gap-4">
-                                <div class="flex size-11 shrink-0 items-center justify-center rounded-full bg-[#eef0e8] text-[#263b2a]">
+                                <div class="flex size-11 shrink-0 items-center justify-center rounded-full bg-[#252525] text-white/90">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -73,19 +70,15 @@ import Page from "../components/Page.astro";
                                 </div>
 
                                 <div>
-                                    <p class="font-medium text-gray-900">
-                                        Location
-                                    </p>
+                                    <p class="font-medium">Location</p>
 
-                                    <p class="mt-1 text-gray-600">
-                                        Akropong-Akuapem, Ghana
-                                    </p>
+                                    <p class="mt-1">Akropong-Akuapem, Ghana</p>
                                 </div>
                             </div>
 
                             <!-- Email -->
                             <div class="flex gap-4">
-                                <div class="flex size-11 shrink-0 items-center justify-center rounded-full bg-[#eef0e8] text-[#263b2a]">
+                                <div class="flex size-11 shrink-0 items-center justify-center rounded-full bg-[#252525] text-white/90">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -103,13 +96,11 @@ import Page from "../components/Page.astro";
                                 </div>
 
                                 <div>
-                                    <p class="font-medium text-gray-900">
-                                        Email
-                                    </p>
+                                    <p class="font-medium">Email</p>
 
                                     <a
                                         href="mailto:booking@adokofarms.com"
-                                        class="mt-1 block text-gray-600 transition hover:text-[#263b2a]"
+                                        class="mt-1 block"
                                     >
                                         booking@adokofarms.com
                                     </a>
@@ -118,7 +109,7 @@ import Page from "../components/Page.astro";
 
                             <!-- Phone -->
                             <div class="flex gap-4">
-                                <div class="flex size-11 shrink-0 items-center justify-center rounded-full bg-[#eef0e8] text-[#263b2a]">
+                                <div class="flex size-11 shrink-0 items-center justify-center rounded-full bg-[#252525] text-white/90">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -136,13 +127,11 @@ import Page from "../components/Page.astro";
                                 </div>
 
                                 <div>
-                                    <p class="font-medium text-gray-900">
-                                        Phone
-                                    </p>
+                                    <p class="font-medium">Phone</p>
 
                                     <a
                                         href="tel:+233535180741"
-                                        class="mt-1 block text-gray-600 transition hover:text-[#263b2a]"
+                                        class="mt-1 block"
                                     >
                                         +233 53 518 0741
                                     </a>
@@ -152,7 +141,7 @@ import Page from "../components/Page.astro";
                     </div>
 
                     <!-- Contact Form -->
-                    <div class="rounded-[2rem] bg-[#f4f1e8] p-6 md:p-10">
+                    <div class="bg-[#EAE8E5] p-6 md:p-10">
                         <div class="mb-8">
                             <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#66705f]">
                                 Send a message
@@ -165,51 +154,51 @@ import Page from "../components/Page.astro";
 
                         <form class="space-y-6">
                             <div>
-                                <label
+                                <!-- <label
                                     for="name"
                                     class="mb-2 block text-sm text-gray-700"
                                 >
                                     Your name
-                                </label>
+                                </label> -->
 
                                 <input
                                     id="name"
                                     type="text"
                                     name="name"
-                                    class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3.5 outline-none transition focus:border-[#263b2a]"
+                                    class="w-full bg-white px-4 py-3.5 outline-none"
                                     placeholder="Your name"
                                 />
                             </div>
 
                             <div>
-                                <label
+                                <!-- <label
                                     for="email"
                                     class="mb-2 block text-sm text-gray-700"
                                 >
                                     Email address
-                                </label>
+                                </label> -->
 
                                 <input
                                     id="email"
                                     type="email"
                                     name="email"
-                                    class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3.5 outline-none transition focus:border-[#263b2a]"
+                                    class="w-full bg-white px-4 py-3.5 outline-none"
                                     placeholder="you@example.com"
                                 />
                             </div>
 
                             <div>
-                                <label
+                                <!-- <label
                                     for="subject"
                                     class="mb-2 block text-sm text-gray-700"
                                 >
                                     What are you interested in?
-                                </label>
+                                </label> -->
 
                                 <select
                                     id="subject"
                                     name="subject"
-                                    class="w-full rounded-xl border border-gray-300 bg-white px-4 py-3.5 outline-none transition focus:border-[#263b2a]"
+                                    class="w-full bg-white px-4 py-3.5 outline-none"
                                 >
                                     <option value="">Select an option</option>
                                     <option value="farm-stay">Farm Stay</option>
@@ -231,25 +220,25 @@ import Page from "../components/Page.astro";
                             </div>
 
                             <div>
-                                <label
+                                <!-- <label
                                     for="message"
                                     class="mb-2 block text-sm text-gray-700"
                                 >
                                     Your message
-                                </label>
+                                </label> -->
 
                                 <textarea
                                     id="message"
                                     name="message"
                                     rows="5"
-                                    class="w-full resize-none rounded-xl border border-gray-300 bg-white px-4 py-3.5 outline-none transition focus:border-[#263b2a]"
+                                    class="w-full resize-none bg-white px-4 py-3.5 outline-none"
                                     placeholder="Tell us what you're planning..."
                                 ></textarea>
                             </div>
 
                             <button
                                 type="submit"
-                                class="btn-book flex w-full! justify-center! py-4!"
+                                class="bg-[#252525] px-6 py-4 rounded-full text-white cursor-pointer"
                             >
                                 Send your message
                             </button>
@@ -260,28 +249,44 @@ import Page from "../components/Page.astro";
         </section>
 
         <!-- Visit Section -->
-        <section class="bg-[#263b2a] py-20 text-white md:py-24">
+        <section class="bg-[#EAE8E5] py-20 md:py-24 container mx-auto rounded-2xl">
             <div class="container mx-auto px-6">
                 <div class="mx-auto max-w-3xl text-center">
-                    <p class="text-xs font-medium uppercase tracking-[0.35em] text-white/60">
+                    <p class="text-xs font-medium uppercase tracking-[0.35em]">
                         Come visit us
                     </p>
 
                     <h2 class="mt-5 text-4xl font-light tracking-tight md:text-5xl">
-                        Escape the city. Experience rural Ghana.
+                        Escape the city and Experience rural Ghana.
                     </h2>
-
+                    <!--
                     <p class="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/70 md:text-base">
                         Find your way to Adoko Farms and discover a slower, more
                         authentic side of Ghana.
-                    </p>
+                    </p> -->
 
                     <div class="mt-8">
                         <a
                             href="/directions"
-                            class="inline-flex rounded-full border border-white/40 px-7 py-3 text-sm transition hover:bg-white hover:text-[#263b2a]"
+                            class="hover:underline flex items-center gap-2 justify-center"
                         >
-                            Get directions
+                            <span>Get directions</span>
+                            <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                                    />
+                                </svg>
+                            </span>
                         </a>
                     </div>
                 </div>
