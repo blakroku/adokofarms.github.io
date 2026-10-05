@@ -1,34 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Page from "../components/Page.astro";
-
-const title = "Reviews";
+import Hero from "../components/Hero.astro";
+import FiveStars from "../components/utilities/FiveStars.astro";
 ---
 
-<Layout title={title}>
+<Layout title="Reviews">
     <Page>
+        <Hero
+            heroTitle="Reviews"
+            firstHeroTitle="Stories from"
+            secondHeroTitle="our guests"
+        />
         <main class="reviews-page">
-            <!-- Hero -->
-            <section class="reviews-hero">
-                <div class="reviews-container">
-                    <div class="reviews-hero-content">
-                        <p class="reviews-eyebrow">Guest reviews</p>
-
-                        <h1>
-                            Stories from
-                            <br />
-                            our guests.
-                        </h1>
-
-                        <p>
-                            Hear from the people who have stayed with us,
-                            explored the farm, joined our experiences, and
-                            discovered a different side of Ghana.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
             <!-- Introduction -->
             <section class="reviews-intro">
                 <div class="reviews-container">
@@ -40,9 +24,7 @@ const title = "Reviews";
                         <div>
                             <p class="reviews-label">What guests say</p>
 
-                            <h2>
-                                More than a place to visit. A place to remember.
-                            </h2>
+                            <h2>Experience worth sharing</h2>
 
                             <p class="reviews-intro-text">
                                 Every visit is different. Some guests come for
@@ -55,152 +37,191 @@ const title = "Reviews";
                 </div>
             </section>
 
-            <!-- Featured Review -->
-            <section class="featured-review">
-                <div class="reviews-container">
-                    <div class="featured-review-grid">
-                        <div class="featured-review-image">
-                            <img
-                                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=85"
-                                alt="Guests enjoying a countryside experience"
-                            />
-                        </div>
-
-                        <div class="featured-review-content">
-                            <span class="quote-mark">“</span>
-
-                            <blockquote>
-                                “A beautiful escape from the usual tourist
-                                experience. The atmosphere, the surroundings,
-                                and the whole experience made us feel like we
-                                were seeing a different side of Ghana.”
-                            </blockquote>
-
-                            <div class="review-author">
-                                <strong>Guest review</strong>
-                                <span>Ghana</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <!-- Reviews Grid -->
             <section class="reviews-list">
                 <div class="reviews-container">
-                    <div class="reviews-section-heading">
-                        <p>From our guests</p>
-                        <h2>Experiences worth sharing.</h2>
-                    </div>
-
                     <div class="reviews-grid">
                         <article class="review-card">
-                            <span class="review-card-number">01</span>
-
-                            <div class="review-stars">★★★★★</div>
+                            <div class="review-stars">
+                                <FiveStars />
+                            </div>
 
                             <blockquote>
-                                “The perfect place to get away from the city. We
+                                The perfect place to get away from the city. We
                                 loved the peaceful surroundings and the
-                                opportunity to spend time in nature.”
+                                opportunity to spend time in nature.
                             </blockquote>
 
-                            <footer>
-                                <strong>Guest review</strong>
-                                <span>Accra, Ghana</span>
+                            <footer class="text-center">
+                                <div>
+                                    <span class="w-12 h-12 bg-orange-600 text-white! p-2 rounded-full mb-3 mx-auto flex items-center justify-center">
+                                        AA
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">
+                                        Abdul Andani
+                                    </span>
+                                </div>
+                                <div class="text-sm">Google Review</div>
                             </footer>
                         </article>
 
                         <article class="review-card review-card-dark">
                             <span class="review-card-number">02</span>
 
-                            <div class="review-stars">★★★★★</div>
+                            <div class="review-stars">
+                                <FiveStars />
+                            </div>
 
                             <blockquote>
-                                “It felt completely different from a normal
-                                hotel stay. The farm environment and the slower
-                                pace made the experience really memorable.”
+                                It felt completely different from a normal hotel
+                                stay. The farm environment and the slower pace
+                                made the experience really memorable.
                             </blockquote>
 
-                            <footer>
-                                <strong>Guest review</strong>
-                                <span>Ghana</span>
+                            <footer class="text-center">
+                                <div>
+                                    <span class="w-12 h-12 bg-orange-600 text-white! p-2 rounded-full mb-3 mx-auto flex items-center justify-center">
+                                        MD
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Mr Danso</span>
+                                </div>
+                                <div class="text-sm">Google Review</div>
                             </footer>
                         </article>
 
                         <article class="review-card">
-                            <span class="review-card-number">03</span>
-
-                            <div class="review-stars">★★★★★</div>
-
+                            <div class="review-stars">
+                                <FiveStars />
+                            </div>
                             <blockquote>
-                                “A wonderful way to experience rural Ghana. The
+                                A wonderful way to experience rural Ghana. The
                                 surroundings were beautiful and there was so
-                                much to discover.”
+                                much to discover.
                             </blockquote>
-
-                            <footer>
-                                <strong>Guest review</strong>
-                                <span>International guest</span>
+                            <footer class="text-center">
+                                <div>
+                                    <span class="w-12 h-12 bg-orange-600 text-white! p-2 rounded-full mb-3 mx-auto flex items-center justify-center">
+                                        MO
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">Mavis Oti</span>
+                                </div>
+                                <div class="text-sm">Google Review</div>
                             </footer>
                         </article>
 
                         <article class="review-card">
                             <span class="review-card-number">04</span>
 
-                            <div class="review-stars">★★★★★</div>
+                            <div class="review-stars">
+                                <FiveStars />
+                            </div>
 
                             <blockquote>
-                                “We came looking for somewhere peaceful and
-                                ended up with an experience we will remember for
-                                a long time.”
+                                We came looking for somewhere peaceful and ended
+                                up with an experience we will remember for a
+                                long time.
                             </blockquote>
 
-                            <footer>
-                                <strong>Guest review</strong>
-                                <span>Accra, Ghana</span>
+                            <footer class="text-center">
+                                <div>
+                                    <span class="w-12 h-12 bg-orange-600 text-white! p-2 rounded-full mb-3 mx-auto flex items-center justify-center">
+                                        KA
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">
+                                        Kwame Adoko
+                                    </span>
+                                </div>
+                                <div class="text-sm">Google Review</div>
                             </footer>
                         </article>
 
                         <article class="review-card review-card-dark">
-                            <span class="review-card-number">05</span>
-
-                            <div class="review-stars">★★★★★</div>
+                            <div class="review-stars">
+                                <FiveStars />
+                            </div>
 
                             <blockquote>
-                                “Beautiful surroundings, friendly people, and a
+                                Beautiful surroundings, friendly people, and a
                                 completely different pace of life. Exactly what
-                                we needed.”
+                                we needed.
                             </blockquote>
 
-                            <footer>
-                                <strong>Guest review</strong>
-                                <span>International guest</span>
+                            <footer class="text-center">
+                                <div>
+                                    <span class="w-12 h-12 bg-orange-600 text-white! p-2 rounded-full mb-3 mx-auto flex items-center justify-center">
+                                        RA
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">
+                                        Rita Abban
+                                    </span>
+                                </div>
+                                <div class="text-sm">Google Review</div>
                             </footer>
                         </article>
 
                         <article class="review-card">
-                            <span class="review-card-number">06</span>
-
-                            <div class="review-stars">★★★★★</div>
+                            <div class="review-stars">
+                                <FiveStars />
+                            </div>
 
                             <blockquote>
-                                “One of those places where you leave feeling
-                                like you have actually experienced somewhere
-                                rather than simply visited it.”
+                                One of those places where you leave feeling like
+                                you have actually experienced somewhere rather
+                                than simply visited it.
                             </blockquote>
 
-                            <footer>
-                                <strong>Guest review</strong>
-                                <span>Ghana</span>
+                            <footer class="text-center">
+                                <div>
+                                    <span class="w-12 h-12 bg-orange-600 text-white! p-2 rounded-full mb-3 mx-auto flex items-center justify-center">
+                                        JMJ
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="font-semibold">
+                                        Jon Madison John
+                                    </span>
+                                </div>
+                                <div class="text-sm">Google Review</div>
                             </footer>
                         </article>
+                    </div>
+
+                    <div class="mt-32 flex justify-center">
+                        <button class="px-5 py-2 rounded-full flex items-center gap-2 cursor-pointer">
+                            <span>Load more</span>
+                            <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                                    />
+                                </svg>
+                            </span>
+                        </button>
                     </div>
                 </div>
             </section>
 
             <!-- Review Quote -->
-            <section class="review-statement">
+            <!-- <section class="review-statement">
                 <div class="reviews-container">
                     <div class="review-statement-content">
                         <span>“</span>
@@ -208,27 +229,10 @@ const title = "Reviews";
                         <h2>Come for the experience. Leave with a story.</h2>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- CTA -->
-            <section class="reviews-cta">
-                <div class="reviews-container">
-                    <div class="reviews-cta-content">
-                        <p>Ready to experience it yourself?</p>
-
-                        <h2>
-                            Your story could
-                            <br />
-                            be next.
-                        </h2>
-
-                        <a href="/contact">
-                            Plan your visit
-                            <span>→</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
+            <!-- DATA -->
         </main>
 
         <style>
@@ -411,6 +415,7 @@ const title = "Reviews";
             }
 
             .review-card {
+                border-radius: 30px;
                 position: relative;
                 min-height: 390px;
                 padding: 38px;
@@ -420,7 +425,7 @@ const title = "Reviews";
             }
 
             .review-card-dark {
-                background: #66705f;
+                background-color: #252525;
                 color: white;
             }
 
