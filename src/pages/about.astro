@@ -2,31 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import Page from "../components/Page.astro";
 import headerImage from "../assets/ad2.png";
+import HeroAbout from "../components/HeroAbout.astro";
 
 const title = "About us";
 ---
 
 <Layout title={title}>
     <Page>
-        <section class="container mx-auto">
-            <header class="text-center py-32 bg-[#252525] text-white bg-[url('../assets/ad.png')] bg-cover bg-center overflow-hidden relative">
-                <div>
-                    <div>
-                        <span class="text-sm uppercase tracking-widest">
-                            Adoko Farms
-                        </span>
-                    </div>
-                    <div class="pb-5">
-                        <span class="text-4xl md:text-5xl font-black flex flex-col gap-2 tracking-wide px-4 md:px-0">
-                            <span>A different way to</span>
-                            <span>experience Ghana</span>
-                        </span>
-                    </div>
-                    <span class="w-10 h-1.5 rounded-full bg-[#F54A00] inline-block"></span>
-                </div>
-            </header>
+        <HeroAbout />
 
-            <section class="bg-white px-4 py-32 md:p-32 rounded-b-3xl w-full md:container md:mx-auto">
+        <section class="container mx-auto">
+            <section class="px-4 py-32 md:p-32 rounded-b-3xl w-full md:container md:mx-auto">
                 <h3 class="font-black text-4xl mb-6">
                     Turning Every Journey into an Everlasting Memory
                 </h3>
