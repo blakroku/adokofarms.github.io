@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Page from "../components/Page.astro";
 import Hero from "../components/Hero.astro";
+import Direction from "../components/Direction.astro";
 ---
 
 <Layout title="Directions to Adoko Farms Eco Resort">
@@ -12,60 +13,14 @@ import Hero from "../components/Hero.astro";
             secondHeroTitle="to Adoko Farms"
         />
         <main class="directions-page">
+            <Direction />
+
             <!-- Location -->
-            <section class="location-section">
-                <div class="directions-container">
-                    <div class="location-grid">
-                        <div class="location-image">
-                            <img
-                                class="rounded-4xl"
-                                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85"
-                                alt="Ghana countryside landscape"
-                            />
-                        </div>
-
-                        <div class="location-content">
-                            <p class="section-label">Our location</p>
-
-                            <h2>Out of the city. Into nature.</h2>
-
-                            <p>
-                                Adoko Farms is located in Akropong-Akuapem, in
-                                Ghana's Eastern Region. The journey takes you
-                                away from the pace of the city and into a
-                                quieter rural landscape.
-                            </p>
-
-                            <div class="location-details">
-                                <div>
-                                    <span>Location</span>
-                                    <strong>Akropong-Akuapem, Ghana</strong>
-                                </div>
-
-                                <div>
-                                    <span>From Accra</span>
-                                    <strong>Approximately 54 km</strong>
-                                </div>
-                            </div>
-
-                            <a
-                                href="https://www.google.com/maps"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="directions-button"
-                            >
-                                Open in Google Maps
-                                <span>↗</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </main>
 
         <style>
             .directions-page {
-                background: #eae8e5;
+                /*background: #eae8e5;*/
                 color: #263b2a;
             }
 
@@ -115,7 +70,7 @@ import Hero from "../components/Hero.astro";
 
             .location-section {
                 padding: 110px 0;
-                background: #eae8e5;
+                /*background: #eae8e5;*/
             }
 
             .location-grid {
