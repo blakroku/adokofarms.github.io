@@ -1,39 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Page from "../components/Page.astro";
-
-const title = "Direction to Adoko Farms";
+import Hero from "../components/Hero.astro";
 ---
 
-<Layout title={title}>
+<Layout title="Directions to Adoko Farms Eco Resort">
     <Page>
+        <Hero
+            heroTitle="Getting here"
+            firstHeroTitle="Find your way"
+            secondHeroTitle="to Adoko Farms"
+        />
         <main class="directions-page">
-            <!-- Hero -->
-            <section class="directions-hero">
-                <div class="directions-container">
-                    <div class="directions-hero-content">
-                        <p class="directions-eyebrow">Getting here</p>
-
-                        <h1>
-                            Find your way
-                            <br />
-                            to Adoko Farms.
-                        </h1>
-
-                        <p>
-                            Leave the city behind and make your way into the
-                            hills and countryside of Akropong-Akuapem.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
             <!-- Location -->
             <section class="location-section">
                 <div class="directions-container">
                     <div class="location-grid">
                         <div class="location-image">
                             <img
+                                class="rounded-4xl"
                                 src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85"
                                 alt="Ghana countryside landscape"
                             />
@@ -76,191 +61,11 @@ const title = "Direction to Adoko Farms";
                     </div>
                 </div>
             </section>
-
-            <!-- Travel Routes -->
-            <section class="routes-section">
-                <div class="directions-container">
-                    <div class="routes-heading">
-                        <p class="section-label">Plan your journey</p>
-
-                        <h2>
-                            Getting here from
-                            <br />
-                            Accra.
-                        </h2>
-
-                        <p>
-                            Whether you're driving up for the day or coming for
-                            a longer stay, allow yourself enough time to enjoy
-                            the journey.
-                        </p>
-                    </div>
-
-                    <div class="routes-grid">
-                        <article class="route-card">
-                            <span class="route-number">01</span>
-
-                            <h3>From Accra</h3>
-
-                            <p>
-                                Travel north-east from Accra towards the Eastern
-                                Region and continue towards Akropong-Akuapem.
-                            </p>
-
-                            <div class="route-meta">
-                                <span>Starting point</span>
-                                <strong>Accra</strong>
-                            </div>
-                        </article>
-
-                        <article class="route-card route-card-dark">
-                            <span class="route-number">02</span>
-
-                            <h3>Approaching Akropong</h3>
-
-                            <p>
-                                As you approach Akropong-Akuapem, follow the
-                                local route towards the farm and use your
-                                navigation app for the final part of the
-                                journey.
-                            </p>
-
-                            <div class="route-meta">
-                                <span>Destination</span>
-                                <strong>Akropong-Akuapem</strong>
-                            </div>
-                        </article>
-
-                        <article class="route-card">
-                            <span class="route-number">03</span>
-
-                            <h3>Final journey</h3>
-
-                            <p>
-                                The final stretch takes you away from the main
-                                roads and into the quieter countryside
-                                surrounding the farm.
-                            </p>
-
-                            <div class="route-meta">
-                                <span>Arrival</span>
-                                <strong>Adoko Farms</strong>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Map -->
-            <section class="map-section">
-                <div class="directions-container">
-                    <div class="map-card">
-                        <div class="map-placeholder">
-                            <div class="map-content">
-                                <span class="map-pin">●</span>
-
-                                <p>Adoko Farms</p>
-
-                                <span>Akropong-Akuapem, Ghana</span>
-
-                                <a
-                                    href="https://www.google.com/maps"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Get directions →
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Before You Leave -->
-            <section class="before-section">
-                <div class="directions-container">
-                    <div class="before-grid">
-                        <div>
-                            <span class="section-number">01</span>
-
-                            <h2>
-                                Before you
-                                <br />
-                                leave.
-                            </h2>
-                        </div>
-
-                        <div class="before-content">
-                            <div class="before-item">
-                                <span>01</span>
-
-                                <div>
-                                    <h3>Check your route</h3>
-
-                                    <p>
-                                        Check your preferred navigation app
-                                        before leaving and make sure you have
-                                        the correct destination loaded.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="before-item">
-                                <span>02</span>
-
-                                <div>
-                                    <h3>Allow enough time</h3>
-
-                                    <p>
-                                        Give yourself enough time for the
-                                        journey, especially when travelling for
-                                        a scheduled experience or tour.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="before-item">
-                                <span>03</span>
-
-                                <div>
-                                    <h3>Keep our contact handy</h3>
-
-                                    <p>
-                                        If you have trouble finding the farm or
-                                        need help during your journey, contact
-                                        us and we'll help you find your way.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CTA -->
-            <section class="directions-cta">
-                <div class="directions-container">
-                    <div class="directions-cta-content">
-                        <p>Ready to come?</p>
-
-                        <h2>
-                            We'll see you
-                            <br />
-                            at the farm.
-                        </h2>
-
-                        <a href="/contact">
-                            Contact us
-                            <span>→</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
         </main>
 
         <style>
             .directions-page {
-                background: #f4f1e8;
+                background: #eae8e5;
                 color: #263b2a;
             }
 
@@ -310,7 +115,7 @@ const title = "Direction to Adoko Farms";
 
             .location-section {
                 padding: 110px 0;
-                background: white;
+                background: #eae8e5;
             }
 
             .location-grid {
