@@ -84,18 +84,100 @@ const whatsappMe = "https://wa.me/233535180741";
         <nav class="mt-16">
             <ul class="text-black">
                 <li>
-                    <a href="/" class="block px-6 py-3">
-                        Home
+                    <a
+                        href="/"
+                        class="flex items-center gap-2 px-6 py-3 text-xl"
+                    >
+                        <span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-home"
+                            >
+                                <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                />
+                                <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                            </svg>
+                        </span>
+                        <span>Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="/tours" class="block px-6 py-3">
-                        Tours
+                    <a
+                        href="/tours"
+                        class="flex items-center gap-2 px-6 py-3 text-xl"
+                    >
+                        <span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-directions"
+                            >
+                                <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                />
+                                <path d="M12 21v-4" />
+                                <path d="M12 13v-4" />
+                                <path d="M12 5v-2" />
+                                <path d="M10 21h4" />
+                                <path d="M8 5v4h11l2 -2l-2 -2l-11 0" />
+                                <path d="M14 13v4h-8l-2 -2l2 -2l8 0" />
+                            </svg>
+                        </span>
+                        <span>Tours</span>
                     </a>
                 </li>
                 <li>
-                    <a href="/activities" class="block px-6 py-3">
-                        Activities
+                    <a
+                        href="/activities"
+                        class="flex items-center gap-2 px-6 py-3 text-xl"
+                    >
+                        <span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-footsteps"
+                            >
+                                <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                />
+                                <path d="M4 16.5a2.5 2.5 0 0 0 5 0a1.5 1.5 0 0 0 -1.5 -1.5h-2a1.5 1.5 0 0 0 -1.5 1.5" />
+                                <path d="M15 18.5a2.5 2.5 0 0 0 5 0a1.5 1.5 0 0 0 -1.5 -1.5h-2a1.5 1.5 0 0 0 -1.5 1.5" />
+                                <path d="M8.52 12h-4.04c-.348 0 -.678 -.179 -.823 -.496c-1.326 -2.904 -.774 -8.504 2.843 -8.504s4.17 5.6 2.843 8.504c-.145 .317 -.475 .496 -.824 .496" />
+                                <path d="M19.52 14h-4.04c-.348 0 -.678 -.179 -.823 -.496c-1.326 -2.904 -.774 -8.504 2.843 -8.504s4.17 5.6 2.843 8.504c-.145 .317 -.475 .496 -.824 .496" />
+                            </svg>
+                        </span>
+                        <span>Activities</span>
                     </a>
                 </li>
                 <li>
@@ -104,13 +186,37 @@ const whatsappMe = "https://wa.me/233535180741";
                         class="flex justify-between items-center px-6 py-3 cursor-pointer w-full"
                         @click="openResourceMenu = !openResourceMenu"
                     >
-                        <span>Resources</span>
+                        <span class="flex items-center gap-2 text-xl">
+                            <span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2.2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-toggle-right"
+                                >
+                                    <path
+                                        stroke="none"
+                                        d="M0 0h24v24H0z"
+                                        fill="none"
+                                    />
+                                    <path d="M14 12a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M2 12a6 6 0 0 1 6 -6h8a6 6 0 0 1 6 6a6 6 0 0 1 -6 6h-8a6 6 0 0 1 -6 -6" />
+                                </svg>
+                            </span>
+                            <span>Resources</span>
+                        </span>
                         <span>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
-                                stroke-width="1.5"
+                                stroke-width="2.2"
                                 stroke="currentColor"
                                 class="size-6"
                             >
@@ -122,39 +228,197 @@ const whatsappMe = "https://wa.me/233535180741";
                             </svg>
                         </span>
                     </button>
-                    <div x-show="openResourceMenu">
+                    <div x-show="openResourceMenu" class="text-xl ml-6">
                         <ul>
                             <li>
-                                <a href="/about" class="block px-6 py-3">
-                                    About Adoko Farms
+                                <a
+                                    href="/about"
+                                    class="flex items-center gap-2 px-6 py-3"
+                                >
+                                    <span>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="22"
+                                            height="22"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="icon icon-tabler icons-tabler-outline icon-tabler-briefcase-2"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9" />
+                                            <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+                                        </svg>
+                                    </span>
+                                    <span>About Adoko Farms</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/reviews" class="block px-6 py-3">
-                                    Reviews
+                                <a
+                                    href="/reviews"
+                                    class="flex items-center gap-2 px-6 py-3"
+                                >
+                                    <span>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="22"
+                                            height="22"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="icon icon-tabler icons-tabler-outline icon-tabler-message-2-heart"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path d="M8 9h8" />
+                                            <path d="M8 13h3.5" />
+                                            <path d="M10.5 19.5l-1.5 -1.5h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v4" />
+                                            <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296" />
+                                        </svg>
+                                    </span>
+                                    <span>Reviews</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/directions" class="block px-6 py-3">
-                                    Directions
+                                <a
+                                    href="/directions"
+                                    class="flex items-center gap-2 px-6 py-3"
+                                >
+                                    <span>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="22"
+                                            height="22"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="icon icon-tabler icons-tabler-outline icon-tabler-map"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" />
+                                            <path d="M9 4v13" />
+                                            <path d="M15 7v13" />
+                                        </svg>
+                                    </span>
+                                    <span>Directions</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/blog" class="block px-6 py-3">
-                                    Blog
+                                <a
+                                    href="/blog"
+                                    class="flex items-center gap-2 px-6 py-3"
+                                >
+                                    <span>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="22"
+                                            height="22"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="icon icon-tabler icons-tabler-outline icon-tabler-news"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" />
+                                            <path d="M8 8l4 0" />
+                                            <path d="M8 12l4 0" />
+                                            <path d="M8 16l4 0" />
+                                        </svg>
+                                    </span>
+                                    <span>Blog</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/faqs" class="block px-6 py-3">
-                                    FAQs
+                                <a
+                                    href="/faqs"
+                                    class="flex items-center gap-2 px-6 py-3"
+                                >
+                                    <span>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="22"
+                                            height="22"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="icon icon-tabler icons-tabler-outline icon-tabler-user-question"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                            <path d="M6 21v-2a4 4 0 0 1 4 -4h3.5" />
+                                            <path d="M19 22v.01" />
+                                            <path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />
+                                        </svg>
+                                    </span>
+                                    <span>FAQs</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="/contact" class="block px-6 py-3">
-                        Contact
+                    <a
+                        href="/contact"
+                        class="flex items-center gap-2 px-6 py-3 text-xl"
+                    >
+                        <span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-message"
+                            >
+                                <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12" />
+                            </svg>
+                        </span>
+                        <span>Contact</span>
                     </a>
                 </li>
                 <li class="mt-12">
@@ -179,14 +443,16 @@ const whatsappMe = "https://wa.me/233535180741";
                                 />
                             </svg>
                         </span>
-                        <span class="font-light">Book Your Experience</span>
+                        <span class="font-light text-xl">
+                            Book Your Experience
+                        </span>
                     </a>
                 </li>
             </ul>
         </nav>
 
         <!-- Mobile navigation footer -->
-        <footer class="mx-4 md:hidden bg-white rounded-xl">
+        <footer class="m-12 md:hiddens bg-white rounded-xl overflow-scroll">
             <section class="p-12 mt-12 rounded-md">
                 <header class="flex gap-4">
                     <div>
@@ -208,14 +474,14 @@ const whatsappMe = "https://wa.me/233535180741";
                 <div class="space-y-2">
                     <a
                         href="https://wa.me/233535180741"
-                        class="border block text-center rounded-sm text-sm px-4 py-1.5 w-full font-semibold text-[#252525]"
+                        class="border block text-center rounded-full text-sm px-4 py-3 w-full font-semibold text-[#252525]"
                     >
                         Talk to us
                     </a>
 
                     <a
                         href="/contact"
-                        class="block text-center rounded-sm text-sm px-4 py-1.5 w-full font-light bg-[#252525] text-white"
+                        class="block text-center rounded-full text-sm px-4 py-3 w-full font-light bg-[#252525] text-white"
                     >
                         Send Enquiry
                     </a>
