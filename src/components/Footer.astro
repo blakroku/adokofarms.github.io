@@ -1,5 +1,6 @@
 ---
 import Arrow from "./icons/Arrow.astro";
+import FaqCard from "./utilities/FaqCard.astro";
 ---
 
 <footer class="pb-32 px-4 sm:px-0">
@@ -24,328 +25,59 @@ import Arrow from "./icons/Arrow.astro";
         </header>
         <main class="mt-12">
             <section class="w-full md:w-[50%] mx-auto space-y-4">
-                <div
-                    class="border border-stone-200 rounded-md p-4 bg-[#EBE8E5]"
-                    x-data="{ open: false }"
-                >
-                    <div
-                        class="flex justify-between cursor-pointer"
-                        @click="open = !open"
-                    >
-                        <h3 class="font-semibold">
-                            What is Adoko Farms and What do we do?
-                        </h3>
-                        <span>
-                            <span x-show="!open">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="size-6"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M12 4.5v15m7.5-7.5h-15"
-                                    />
-                                </svg>
-                            </span>
-                            <span x-show="open">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="size-6"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M5 12h14"
-                                    />
-                                </svg>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="tracking-wide mt-6 font-light" x-show="open">
-                        lorem ipsum graham tech cloned with more facilities. And
-                        another long message that was not intended for certain
-                        aspects. lorem ipsum graham tech cloned with more
-                        facilities. And another long message that was not
-                        intended for certain aspects.
-                    </div>
-                </div>
+                <FaqCard title="What is Adoko Farms and What do we do?">
+                    lorem ipsum graham tech cloned with more facilities. And
+                    another long message that was not intended for certain
+                    aspects. lorem ipsum graham tech cloned with more
+                    facilities. And another long message that was not intended
+                    for certain aspects.
+                </FaqCard>
 
-                <div
-                    class="border border-stone-200 rounded-md p-4 bg-[#EBE8E5]"
-                    x-data="{ open: false }"
-                >
-                    <div
-                        class="flex justify-between cursor-pointer"
-                        @click="open = !open"
-                    >
-                        <h3 class="font-semibold">
-                            Who do we serve in the tourism industry?
-                        </h3>
-                        <span>
-                            <span x-show="!open">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="size-6"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M12 4.5v15m7.5-7.5h-15"
-                                    />
-                                </svg>
-                            </span>
-                            <span x-show="open">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="size-6"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M5 12h14"
-                                    />
-                                </svg>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="tracking-wide font-light mt-6" x-show="open">
-                        lorem ipsum graham tech cloned with more facilities. And
-                        another long message that was not intended for certain
-                        aspects.
-                    </div>
-                </div>
+                <FaqCard title="Who do we serve in the tourism industry">
+                    lorem ipsum graham tech cloned with more facilities. And
+                    another long message that was not intended for certain
+                    aspects. lorem ipsum graham tech cloned with more
+                    facilities. And another long message that was not intended
+                    for certain aspects.
+                </FaqCard>
 
-                <div
-                    class="border border-stone-200 rounded-md p-4 bg-[#EBE8E5]"
-                    x-data="{ open: false }"
-                >
-                    <div
-                        class="flex justify-between cursor-pointer"
-                        @click="open = !open"
-                    >
-                        <h3 class="font-semibold">How much fun can I have?</h3>
-                        <span>
-                            <span x-show="!open">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="size-6"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M12 4.5v15m7.5-7.5h-15"
-                                    />
-                                </svg>
-                            </span>
-                            <span x-show="open">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="size-6"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M5 12h14"
-                                    />
-                                </svg>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="tracking-wide font-light mt-6" x-show="open">
-                        lorem ipsum graham tech cloned with more facilities. And
-                        another long message that was not intended for certain
-                        aspects.
-                    </div>
-                </div>
+                <FaqCard title="How much fun can I have">
+                    lorem ipsum graham tech cloned with more facilities. And
+                    another long message that was not intended for certain
+                    aspects. lorem ipsum graham tech cloned with more
+                    facilities. And another long message that was not intended
+                    for certain aspects.
+                </FaqCard>
 
-                <div
-                    class="border border-stone-200 rounded-md p-4 bg-[#EBE8E5]"
-                    x-data="{ open: false }"
-                >
-                    <div
-                        class="flex justify-between cursor-pointer"
-                        @click="open = !open"
-                    >
-                        <h3 class="font-semibold">
-                            What do I need for my visit?
-                        </h3>
-                        <span>
-                            <span x-show="!open">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="size-6"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M12 4.5v15m7.5-7.5h-15"
-                                    />
-                                </svg>
-                            </span>
-                            <span x-show="open">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="size-6"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M5 12h14"
-                                    />
-                                </svg>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="tracking-wide font-light mt-6" x-show="open">
-                        lorem ipsum graham tech cloned with more facilities. And
-                        another long message that was not intended for certain
-                        aspects.
-                    </div>
-                </div>
+                <FaqCard title="Can I host my occasion at your place?">
+                    lorem ipsum graham tech cloned with more facilities. And
+                    another long message that was not intended for certain
+                    aspects. lorem ipsum graham tech cloned with more
+                    facilities. And another long message that was not intended
+                    for certain aspects.
+                </FaqCard>
 
-                <div
-                    class="border border-stone-200 rounded-md p-4 bg-[#EBE8E5]"
-                    x-data="{ open: false }"
-                >
-                    <div
-                        class="flex justify-between cursor-pointer"
-                        @click="open = !open"
-                    >
-                        <h3 class="font-semibold">
-                            Can I host my occasion at your place?
-                        </h3>
-                        <span>
-                            <span x-show="!open">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="size-6"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M12 4.5v15m7.5-7.5h-15"
-                                    />
-                                </svg>
-                            </span>
-                            <span x-show="open">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="size-6"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M5 12h14"
-                                    />
-                                </svg>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="tracking-wide font-light mt-6" x-show="open">
-                        lorem ipsum graham tech cloned with more facilities. And
-                        another long message that was not intended for certain
-                        aspects.
-                    </div>
-                </div>
+                <FaqCard title="What do I need to visit?">
+                    lorem ipsum graham tech cloned with more facilities. And
+                    another long message that was not intended for certain
+                    aspects. lorem ipsum graham tech cloned with more
+                    facilities. And another long message that was not intended
+                    for certain aspects.
+                </FaqCard>
 
-                <div
-                    class="border border-stone-200 rounded-md p-4 bg-[#EBE8E5]"
-                    x-data="{ open: false }"
-                >
-                    <div
-                        class="flex justify-between cursor-pointer"
-                        @click="open = !open"
-                    >
-                        <h3 class="font-semibold">
-                            Anything else worth knowing?
-                        </h3>
-                        <span>
-                            <span x-show="!open">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="size-6"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M12 4.5v15m7.5-7.5h-15"
-                                    />
-                                </svg>
-                            </span>
-                            <span x-show="open">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor"
-                                    class="size-6"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M5 12h14"
-                                    />
-                                </svg>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="tracking-wide font-light mt-6" x-show="open">
-                        lorem ipsum graham tech cloned with more facilities. And
-                        another long message that was not intended for certain
-                        aspects.
-                    </div>
-                </div>
+                <FaqCard title="Anything else worth knowing?">
+                    lorem ipsum graham tech cloned with more facilities. And
+                    another long message that was not intended for certain
+                    aspects. lorem ipsum graham tech cloned with more
+                    facilities. And another long message that was not intended
+                    for certain aspects.
+                </FaqCard>
 
                 <footer class="mt-8 text-center">
-                    <a href="/faqs" class="hover:underline">
+                    <a href="/faqs" class="btn">
                         Learn more
                     </a>
+                    <!-- <Button name="Learn more" bg="#F8F7F0" border="#252525" /> -->
                 </footer>
             </section>
         </main>
@@ -445,27 +177,7 @@ import Arrow from "./icons/Arrow.astro";
                         class="flex gap-2 items-center font-light"
                     >
                         <span class="text-white">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="26"
-                                height="26"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#fff"
-                                stroke-width="1.2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
-                            >
-                                <path
-                                    stroke="none"
-                                    d="M0 0h24v24H0z"
-                                    fill="none"
-                                />
-                                <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" />
-                                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                                <path d="M16.5 7.5v.01" />
-                            </svg>
+                            <i class="hgi hgi-stroke hgi-rounded hgi-instagram text-4xl"></i>
                         </span>
                         <span class="font-light text-white/60">Instagram</span>
                     </a>
@@ -476,25 +188,7 @@ import Arrow from "./icons/Arrow.astro";
                         target="_blank"
                     >
                         <span class="text-white">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="26"
-                                height="26"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#fff"
-                                stroke-width="1.2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"
-                            >
-                                <path
-                                    stroke="none"
-                                    d="M0 0h24v24H0z"
-                                    fill="none"
-                                />
-                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                            </svg>
+                            <i class="hgi hgi-stroke hgi-rounded hgi-facebook-01 text-4xl"></i>
                         </span>
                         <span class="font-light text-white/60">Facebook</span>
                     </a>
@@ -505,26 +199,7 @@ import Arrow from "./icons/Arrow.astro";
                         target="_blank"
                     >
                         <span class="text-white">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="26"
-                                height="26"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#fff"
-                                stroke-width="1.2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"
-                            >
-                                <path
-                                    stroke="none"
-                                    d="M0 0h24v24H0z"
-                                    fill="none"
-                                />
-                                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
-                            </svg>
+                            <i class="hgi hgi-stroke hgi-rounded hgi-whatsapp text-4xl"></i>
                         </span>
                         <span class="font-light text-white/60">Whatsapp</span>
                     </a>

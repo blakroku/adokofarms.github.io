@@ -1,3 +1,7 @@
+---
+import Button from "./utilities/Button.astro";
+---
+
 <section class="py-32">
     <div class="container mx-auto px-4">
         <!-- Header -->
@@ -33,26 +37,10 @@
             <button
                 id="activities-prev"
                 type="button"
-                class="absolute left-4 top-1/2 -translate-y-1/2 z-20
-                       w-11 h-11 items-center justify-center
-                       bg-[#4B5160] rounded-full shadow-xl cursor-pointer
-                       flex lg:static lg:translate-y-0 lg:w-14 lg:h-14 text-white hover:bg-white hover:text-[#4B5160] transition"
+                class="btn-rounded"
                 aria-label="Previous experiences"
             >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="4"
-                    stroke="currentColor"
-                    class="size-5 lg:size-6"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.75 19.5 8.25 12l7.5-7.5"
-                    />
-                </svg>
+                <i class="hgi hgi-stroke hgi-rounded hgi-arrow-left-01 text-4xl font-bold"></i>
             </button>
 
             <!-- Scrollable Activities -->
@@ -78,7 +66,7 @@
                         <div class="flex items-center justify-between mt-5">
                             <span class="text-sm text-white/70">± 1 hour</span>
 
-                            <a href="#" class="activity-link text-black!">
+                            <a href="#" class="btn">
                                 Book Now
                             </a>
                         </div>
@@ -102,7 +90,7 @@
                         <div class="flex items-center justify-between mt-5">
                             <span class="text-sm text-white/70">± 2 hours</span>
 
-                            <a href="#" class="activity-link text-black!">
+                            <a href="#" class="btn">
                                 Book Now
                             </a>
                         </div>
@@ -128,7 +116,7 @@
                                 Guided Farm Tours
                             </span>
 
-                            <a href="#" class="activity-link text-black!">
+                            <a href="#" class="btn">
                                 Book Now
                             </a>
                         </div>
@@ -154,7 +142,7 @@
                         <div class="flex items-center justify-between mt-5">
                             <span class="text-sm text-white/70">± 3 hours</span>
 
-                            <a href="#" class="activity-link text-black!">
+                            <a href="#" class="btn">
                                 Book Now
                             </a>
                         </div>
@@ -178,7 +166,7 @@
                         <div class="flex items-center justify-between mt-5">
                             <span class="text-sm text-white/70">± 4 hours</span>
 
-                            <a href="#" class="activity-link text-black!">
+                            <a href="#" class="btn">
                                 Book Now
                             </a>
                         </div>
@@ -190,26 +178,10 @@
             <button
                 id="activities-next"
                 type="button"
-                class="absolute right-4 top-1/2 -translate-y-1/2 z-20
-                       w-11 h-11 flex items-center justify-center
-                       bg-[#4B5160] text-white rounded-full shadow-xl cursor-pointer
-                       lg:static lg:translate-y-0 lg:w-14 lg:h-14 hover:bg-white hover:text-[#4B5160] transition"
+                class="btn-rounded"
                 aria-label="Next experiences"
             >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="4"
-                    stroke="currentColor"
-                    class="size-5 lg:size-6"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                    />
-                </svg>
+                <i class="hgi hgi-stroke hgi-rounded hgi-arrow-right-01 text-4xl font-bold"></i>
             </button>
         </div>
     </div>

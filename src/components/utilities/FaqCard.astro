@@ -1,0 +1,21 @@
+---
+const { title } = Astro.props;
+---
+
+<div class="rounded-2xl px-8 py-6 bg-[#EBE8E5]" x-data="{ open: false }">
+    <div class="flex justify-between cursor-pointer" @click="open = !open">
+        <h3 class="font-semibold text-xl">{title}</h3>
+        <span>
+            <span x-show="!open">
+                <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+            </span>
+            <span x-show="open">
+                <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+            </span>
+        </span>
+    </div>
+
+    <div class="faqs-content mt-6" x-show="open">
+        <slot />
+    </div>
+</div>
