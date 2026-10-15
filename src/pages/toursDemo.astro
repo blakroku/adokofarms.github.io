@@ -1,0 +1,344 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Page from "../components/Page.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<Layout title="Tours">
+    <Page>
+        <Hero
+            heroTitle="Out tours"
+            firstHeroTitle="What is"
+            secondHeroTitle="happening?"
+        />
+
+        <!-- Upcoming Tours -->
+        <section class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto max-w-7xl">
+                    <div class="mb-12 flex flex-col gap-5 md:mb-16 md:flex-row md:items-end md:justify-between">
+                        <div>
+                            <p class="text-xs font-medium uppercase tracking-[0.3em]">
+                                Coming up
+                            </p>
+
+                            <h2 class="mt-3 text-4xl font-light tracking-tight md:text-5xl">
+                                Current tours
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                        <!-- Current Tour -->
+                        <article class="group overflow-hidden rounded-[2rem] border border-gray-200 bg-[#252525]">
+                            <div class="relative h-90 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=85"
+                                    alt="Tour"
+                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                                />
+
+                                <div class="absolute left-6 top-6 rounded-full bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.15em]">
+                                    Upcoming
+                                </div>
+                            </div>
+
+                            <div class="p-7 md:p-8 text-white/60">
+                                <div class="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.2em]">
+                                    <span>12 – 15 December 2026</span>
+                                    <span>•</span>
+                                    <span>4 days</span>
+                                </div>
+
+                                <h3 class="mt-4 text-3xl font-light">
+                                    Volta Adventure
+                                </h3>
+
+                                <p class="mt-4 max-w-xl text-sm leading-7">
+                                    A journey through the Volta region,
+                                    connecting landscapes, communities, food,
+                                    and experiences along the way.
+                                </p>
+
+                                <div class="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                                    <span class="text-sm">
+                                        From $XXX / person
+                                    </span>
+
+                                    <div class="flex gap-3">
+                                        <a
+                                            href="#"
+                                            class="inline-flex items-center justify-center rounded-full border border-[#263b2a] px-5 py-2.5 text-sm transition hover:bg-[#263b2a] hover:text-white"
+                                        >
+                                            View tour
+                                        </a>
+
+                                        <a
+                                            href="#"
+                                            class="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm text-white transition hover:bg-[#1c2d20]"
+                                        >
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Current Tour -->
+                        <article class="group overflow-hidden rounded-[2rem] border border-gray-200 bg-white">
+                            <div class="relative h-[360px] overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1400&q=85"
+                                    alt="Tour"
+                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                                />
+
+                                <div class="absolute left-6 top-6 rounded-full bg-white px-4 py-2 text-xs font-medium uppercase tracking-[0.15em] text-[#263b2a]">
+                                    Upcoming
+                                </div>
+                            </div>
+
+                            <div class="p-7 md:p-8">
+                                <div class="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
+                                    <span>January 2027</span>
+                                    <span>•</span>
+                                    <span>3 days</span>
+                                </div>
+
+                                <h3 class="mt-4 text-3xl font-light text-[#263b2a]">
+                                    Nature & Countryside Escape
+                                </h3>
+
+                                <p class="mt-4 max-w-xl text-sm leading-7 text-gray-600">
+                                    Slow down and experience the natural beauty,
+                                    rural landscapes, and quiet places beyond
+                                    the usual tourist routes.
+                                </p>
+
+                                <div class="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                                    <span class="text-sm text-gray-500">
+                                        From $XXX / person
+                                    </span>
+
+                                    <div class="flex gap-3">
+                                        <a
+                                            href="#"
+                                            class="inline-flex items-center justify-center rounded-full border border-[#263b2a] px-5 py-2.5 text-sm text-[#263b2a] transition hover:bg-[#263b2a] hover:text-white"
+                                        >
+                                            View tour
+                                        </a>
+
+                                        <a
+                                            href="#"
+                                            class="inline-flex items-center justify-center rounded-full bg-[#263b2a] px-5 py-2.5 text-sm text-white transition hover:bg-[#1c2d20]"
+                                        >
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Tours -->
+        <section class="bg-[#f4f1e8] py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="mx-auto max-w-7xl">
+                    <div class="mb-12 flex flex-col gap-5 md:mb-16 md:flex-row md:items-end md:justify-between">
+                        <div>
+                            <p class="text-xs font-medium uppercase tracking-[0.3em]">
+                                From our archives
+                            </p>
+
+                            <h2 class="mt-3 text-6xl font-semibold tracking-normal">
+                                Past tours
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                        <a
+                            href="/"
+                            class="relative group border rounded-[1.75rem] p-8 bg-white hover:tour-shadow-skin"
+                        >
+                            <div class="relative w-20 h-20 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/vector-1757328201112-2d160c5f21c7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                    alt="Past tour"
+                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105 rounded-full border border-[#252525]"
+                                />
+                            </div>
+
+                            <div class="">
+                                <h3 class="mt-8 text-3xl text-wrap font-medium">
+                                    Campbuzz 5.0: The Grand Final
+                                </h3>
+
+                                <p class="mt-6 leading-6 tracking-wide font-light">
+                                    Two days. One night. An unforgettable
+                                    camping adventure at Adoko Farms Eco Resort.
+                                    From quad biking and sunrise hiking to
+                                    farm-to-table meals, bonfire nights, movies
+                                    under the stars and new friendships, this is
+                                    your chance to step away from the routine
+                                    and experience camping in Ghana differently.
+                                </p>
+                            </div>
+
+                            <span class="absolute inline-block text-3xl top-12 right-12">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-right-01"></i>
+                            </span>
+                        </a>
+
+                        <a
+                            href="/"
+                            class="relative group border rounded-[1.75rem] p-8 bg-white"
+                        >
+                            <div class="relative w-20 h-20 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/vector-1790770738539-e8cd7c065ba6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                    alt="Past tour"
+                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105 rounded-full hover:rounded-full border border-[#252525]"
+                                />
+                            </div>
+
+                            <div class="">
+                                <h3 class="mt-8 text-[28px] text-wrap font-medium leading-9.5">
+                                    The Man Within, Mens Retreat
+                                </h3>
+
+                                <p class="mt-6 leading-6 tracking-wide font-light">
+                                    A moment to step away from the noise,
+                                    reconnect with yourself, reflect on life,
+                                    build meaningful connections, and rediscover
+                                    the man within. Sometimes, the strongest
+                                    thing a man can do is pause, reflect, and
+                                    give himself room to grow. Gentlemen, this
+                                    is your reminder. The Man Within is calling.
+                                </p>
+                            </div>
+
+                            <span class="absolute inline-block text-3xl top-12 right-12">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-right-01"></i>
+                            </span>
+                        </a>
+
+                        <a
+                            href="/"
+                            class="relative group border rounded-[1.75rem] p-8 bg-white"
+                        >
+                            <div class="relative w-20 h-20 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/vector-1770415184241-7a62d44d10c7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                    alt="Past tour"
+                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105 rounded-full hover:rounded-full border border-[#252525]"
+                                />
+                            </div>
+
+                            <div class="">
+                                <h3 class="mt-8 text-3xl text-wrap font-medium">
+                                    Morning Wellness Series
+                                </h3>
+
+                                <p class="mt-6 text-[16px] tracking-wide font-light leading-7">
+                                    Sometimes, all you need is a little space,
+                                    fresh air and the willingness to move. Step
+                                    outside. Feel the ground beneath your feet.
+                                    Look around. Take a few deep breaths. Let
+                                    your body wake up before the rest of the
+                                    world starts demanding your attention.
+                                </p>
+                            </div>
+
+                            <span class="absolute inline-block text-3xl top-12 right-12">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-right-01"></i>
+                            </span>
+                        </a>
+
+                        <a
+                            href="/"
+                            class="relative group border rounded-[1.75rem] p-8 bg-white"
+                        >
+                            <div class="relative w-20 h-20 overflow-hidden">
+                                <img
+                                    src="https://plus.unsplash.com/premium_vector-1739946145801-0643eacf5d2e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                    alt="Past tour"
+                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105 rounded-full hover:rounded-full border border-[#252525]"
+                                />
+                            </div>
+
+                            <div class="">
+                                <h3 class="mt-8 text-3xl text-wrap font-medium">
+                                    Odwira Farm Stay Vibe
+                                </h3>
+
+                                <p class="mt-6 leading-6 tracking-wide font-light">
+                                    Experience Odwira in Akropong and stay in
+                                    the peaceful surroundings of Adoko Farms.
+                                    Odwira in town. Your stay in nature.
+                                </p>
+                                <ul class="mt-3">
+                                    <li>⛺ 3 Nights Tent Accommodation</li>
+                                    <li>🍽️ Local Farm-to-Table Brunch</li>
+                                    <li>🌿 Peaceful Farm Setting</li>
+                                    <li>✨ Time to Relax & Unwind</li>
+                                </ul>
+                            </div>
+
+                            <span class="absolute inline-block text-3xl top-12 right-12">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-right-01"></i>
+                            </span>
+                        </a>
+
+                        <a
+                            href="/"
+                            class="relative group border rounded-[1.75rem] p-8 bg-white"
+                        >
+                            <div class="relative w-20 h-20 overflow-hidden">
+                                <img
+                                    src="https://images.unsplash.com/vector-1785553062785-959c5e28e361?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                    alt="Past tour"
+                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105 rounded-full hover:rounded-full border border-[#252525]"
+                                />
+                            </div>
+
+                            <div class="">
+                                <h3 class="mt-8 text-3xl text-wrap font-medium">
+                                    Campbuzz 4.0: 24hr of Extreme Adventure
+                                </h3>
+
+                                <p class="mt-6 leading-6 tracking-wide font-light">
+                                    Whether you’re coming alone to meet new
+                                    people or with someone special, Campbuzz is
+                                    designed to leave you refreshed, inspired,
+                                    and with memories you’ll talk about long
+                                    after the weekend ends.
+                                </p>
+                            </div>
+
+                            <span class="absolute inline-block text-3xl top-12 right-12">
+                                <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-right-01"></i>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="mt-20 text-center">
+                        <a
+                            href="#"
+                            class="inline-flex items-center gap-2 rounded-full btn"
+                        >
+                            <span>Load more past tours</span>
+                            <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <!-- Data -->
+    </Page>
+</Layout>
