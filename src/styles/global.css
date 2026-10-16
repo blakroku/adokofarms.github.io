@@ -35,7 +35,8 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    color: #180148;
+    /*color: #180148;*/
+    color: #322e28;
     background-color: var(--background-color);
 }
 
@@ -154,7 +155,7 @@ h1 {
     position: absolute;
     inset: 0;
     border-radius: 1.125rem;
-    background-color: yellowgreen;
+    background-color: #1D8E5C;
     z-index: -1;
 }
 

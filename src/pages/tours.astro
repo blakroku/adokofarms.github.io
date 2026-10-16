@@ -31,72 +31,236 @@ import Hero from "../components/Hero.astro";
                     x-init="total = $refs.experiences.children.length"
                 >
                     <div class="container mx-auto px-4 sm:px-6">
-                        <div class="bg-[#F9F8F1] p-5 sm:p-8 md:p-12 lg:p-20 xl:p-32 rounded-3xl md:rounded-4xl">
+                        <div class="bg-linear-to-br from-[#20905F] to-[#60B08A] p-5 sm:p-8 md:p-12 lg:p-20 xl:p-32 rounded-3xl md:rounded-4xl">
                             <div>
-                                <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold">
+                                <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-white/80">
                                     Our upcoming experience
                                 </h3>
                             </div>
 
                             <main x-ref="experiences">
                                 <!-- experience 1 -->
-                                <div
-                                    class="flex flex-col md:flex-row justify-between gap-6 md:gap-8 mt-8 md:mt-12"
-                                    x-show="current === 0"
-                                >
-                                    <div class="w-full md:w-[50%] border p-5 sm:p-8 md:p-10 rounded-3xl space-y-6 md:space-y-9 tour-shadow-skin">
-                                        <h3 class="text-2xl sm:text-3xl font-semibold">
-                                            Campbuzz 6.0: The wild experience
-                                        </h3>
-                                        <div>
-                                            Full weekend get away. Two nights.
-                                            An unforgettable camping adventure
-                                            at Adoko Farms Eco Resort. From quad
-                                            biking and sunrise hiking to
-                                            farm-to-table meals, bonfire nights,
-                                            movies under the stars and new
-                                            friendships, this is your chance to
-                                            step away from the routine and
-                                            experience camping in Ghana
-                                            differently.
+                                <div>
+                                    <div
+                                        class="flex flex-col md:flex-row justify-between gap-6 md:gap-8 mt-8 md:mt-12"
+                                        x-show="current === 0"
+                                    >
+                                        <div class="w-full md:w-[50%] border p-5 sm:p-8 md:p-10 rounded-3xl tour-shadow-skin">
+                                            <main class="space-y-6 md:space-y-9">
+                                                <h3 class="font-semibold">
+                                                    <a
+                                                        href=""
+                                                        class="hover:underline flex items-center justify-between"
+                                                    >
+                                                        <span class="text-2xl sm:text-2xl">
+                                                            Campbuzz 6.0: The
+                                                            wild experience
+                                                        </span>
+                                                        <span class="text-2xl sm:text-3xl">
+                                                            <i class="hgi hgi-stroke hgi-rounded hgi-link-square-01"></i>
+                                                        </span>
+                                                    </a>
+                                                </h3>
+                                                <div class="text-wrap">
+                                                    Full weekend get away. Two
+                                                    nights. An unforgettable
+                                                    camping adventure at Adoko
+                                                    Farms Eco Resort. From quad
+                                                    biking and sunrise hiking to
+                                                    farm-to-table meals, bonfire
+                                                    nights, movies under the
+                                                    stars and new friendships,
+                                                    this is your chance to step
+                                                    away from the routine and
+                                                    experience camping in Ghana
+                                                    differently.
+                                                </div>
+                                            </main>
+                                            <footer class="flex justify-between mt-12 items-center">
+                                                <div>
+                                                    <span class="flex gap-3 font-semibold text-xl">
+                                                        <h4>From:</h4>
+                                                        <span>GHC1,300.00</span>
+                                                    </span>
+                                                </div>
+                                                <div class="flex gap-5 items-center">
+                                                    <!-- <span>
+                                                        <a
+                                                            class="btn"
+                                                            href="https://wa.me/2330579994032"
+                                                        >
+                                                            View experience
+                                                        </a>
+                                                    </span> -->
+                                                    <span>
+                                                        <a
+                                                            class="btn"
+                                                            href="https://wa.me/233535180741"
+                                                            target="_blank"
+                                                        >
+                                                            Book now
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </footer>
                                         </div>
-                                    </div>
-                                    <div class="w-full md:w-[50%]">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                                            alt="Upcoming tours"
-                                            class="w-full h-64 sm:h-80 md:h-full object-cover rounded-3xl"
-                                        />
+
+                                        <div class="w-full md:w-[50%]">
+                                            <img
+                                                src="https://images.unsplash.com/photo-1780978670460-11340f303d0b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                                alt="Upcoming tours"
+                                                class="w-full h-64 sm:h-80 md:h-full object-cover rounded-3xl"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
 
                                 <!-- experience 2 -->
-                                <div
-                                    class="flex flex-col md:flex-row justify-between gap-6 md:gap-8 mt-8 md:mt-12"
-                                    x-show="current === 1"
-                                    x-cloak
-                                >
-                                    <div class="w-full md:w-[50%] border p-5 sm:p-8 md:p-10 rounded-3xl space-y-6 md:space-y-9 tour-shadow-skin">
-                                        <h3 class="text-2xl sm:text-3xl font-semibold">
-                                            Morning wellness series
-                                        </h3>
-                                        <div>
-                                            Sometimes, all you need is a little
-                                            space, fresh air and the willingness
-                                            to move. Step outside. Feel the
-                                            ground beneath your feet. Look
-                                            around. Take a few deep breaths. Let
-                                            your body wake up before the rest of
-                                            the world starts demanding your
-                                            attention.
+                                <div>
+                                    <div
+                                        class="flex flex-col md:flex-row justify-between gap-6 md:gap-8 mt-8 md:mt-12"
+                                        x-show="current === 1"
+                                    >
+                                        <div class="w-full md:w-[50%] border p-5 sm:p-8 md:p-10 rounded-3xl tour-shadow-skin">
+                                            <main class="space-y-6 md:space-y-9">
+                                                <h3 class="font-semibold">
+                                                    <a
+                                                        href=""
+                                                        class="hover:underline flex items-center justify-between"
+                                                    >
+                                                        <span class="text-2xl sm:text-2xl">
+                                                            Morning wellness
+                                                            series
+                                                        </span>
+                                                        <span class="text-2xl sm:text-3xl">
+                                                            <i class="hgi hgi-stroke hgi-rounded hgi-link-square-01"></i>
+                                                        </span>
+                                                    </a>
+                                                </h3>
+                                                <div class="text-wrap">
+                                                    Sometimes, all you need is a
+                                                    little space, fresh air and
+                                                    the willingness to move.
+                                                    Step outside. Feel the
+                                                    ground beneath your feet.
+                                                    Look around. Take a few deep
+                                                    breaths. Let your body wake
+                                                    up before the rest of the
+                                                    world starts demanding your
+                                                    attention.
+                                                </div>
+                                            </main>
+                                            <footer class="flex justify-between mt-12 items-center">
+                                                <div>
+                                                    <span class="flex gap-3 font-semibold text-xl">
+                                                        <h4>From:</h4>
+                                                        <span>GHC700.00</span>
+                                                    </span>
+                                                </div>
+                                                <div class="flex gap-5 items-center">
+                                                    <!-- <span>
+                                                        <a
+                                                            class="btn"
+                                                            href="https://wa.me/2330579994032"
+                                                        >
+                                                            View experience
+                                                        </a>
+                                                    </span> -->
+                                                    <span>
+                                                        <a
+                                                            class="btn"
+                                                            href="https://wa.me/233535180741"
+                                                            target="_blank"
+                                                        >
+                                                            Book now
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </footer>
+                                        </div>
+
+                                        <div class="w-full md:w-[50%]">
+                                            <img
+                                                src="https://plus.unsplash.com/premium_photo-1791571264917-fe4ae02a102d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                                alt="Upcoming tours"
+                                                class="w-full h-64 sm:h-80 md:h-full object-cover rounded-3xl"
+                                            />
                                         </div>
                                     </div>
-                                    <div class="w-full md:w-[50%]">
-                                        <img
-                                            src="https://plus.unsplash.com/premium_photo-1791571264917-fe4ae02a102d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-                                            alt="Upcoming tours"
-                                            class="w-full h-64 sm:h-80 md:h-full object-cover rounded-3xl"
-                                        />
+                                </div>
+
+                                <!-- experience 3 -->
+                                <div>
+                                    <div
+                                        class="flex flex-col md:flex-row justify-between gap-6 md:gap-8 mt-8 md:mt-12"
+                                        x-show="current === 2"
+                                    >
+                                        <div class="w-full md:w-[50%] border p-5 sm:p-8 md:p-10 rounded-3xl tour-shadow-skin">
+                                            <main class="space-y-6 md:space-y-9">
+                                                <h3 class="font-semibold">
+                                                    <a
+                                                        href=""
+                                                        class="hover:underline flex items-center justify-between"
+                                                    >
+                                                        <span class="text-2xl sm:text-2xl">
+                                                            Mens retreat
+                                                        </span>
+                                                        <span class="text-2xl sm:text-3xl">
+                                                            <i class="hgi hgi-stroke hgi-rounded hgi-link-square-01"></i>
+                                                        </span>
+                                                    </a>
+                                                </h3>
+                                                <div class="text-wrap">
+                                                    A moment to step away from
+                                                    the noise, reconnect with
+                                                    yourself, reflect on life,
+                                                    build meaningful
+                                                    connections, and rediscover
+                                                    the man within. Sometimes,
+                                                    the strongest thing a man
+                                                    can do is pause, reflect,
+                                                    and give himself room to
+                                                    grow. Gentlemen, this is
+                                                    your reminder. The Man
+                                                    Within is calling.
+                                                </div>
+                                            </main>
+                                            <footer class="flex justify-between mt-12 items-center">
+                                                <div>
+                                                    <span class="flex gap-3 font-semibold text-xl">
+                                                        <h4>From:</h4>
+                                                        <span>GHC900.00</span>
+                                                    </span>
+                                                </div>
+                                                <div class="flex gap-5 items-center">
+                                                    <!-- <span>
+                                                        <a
+                                                            class="btn"
+                                                            href="https://wa.me/2330579994032"
+                                                        >
+                                                            View experience
+                                                        </a>
+                                                    </span> -->
+                                                    <span>
+                                                        <a
+                                                            class="btn"
+                                                            href="https://wa.me/233535180741"
+                                                            target="_blank"
+                                                        >
+                                                            Book now
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </footer>
+                                        </div>
+
+                                        <div class="w-full md:w-[50%]">
+                                            <img
+                                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                                alt="Upcoming tours"
+                                                class="w-full h-64 sm:h-80 md:h-full object-cover rounded-3xl"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
 
@@ -200,7 +364,7 @@ import Hero from "../components/Hero.astro";
 
                             <div class="">
                                 <h3 class="mt-8 text-[28px] text-wrap font-medium leading-9.5">
-                                    The Man Within, Mens Retreat
+                                    The Man Within - Mens Retreat
                                 </h3>
 
                                 <p class="mt-6 leading-6 tracking-wide font-light">
