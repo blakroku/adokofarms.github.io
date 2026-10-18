@@ -155,7 +155,8 @@ h1 {
     position: absolute;
     inset: 0;
     border-radius: 1.125rem;
-    background-color: #1D8E5C;
+    /*background-color: #1D8E5C;*/
+    background-color: yellow;
     z-index: -1;
 }
 
