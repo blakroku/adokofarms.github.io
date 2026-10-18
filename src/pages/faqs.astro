@@ -6,28 +6,106 @@ import Hero from "../components/Hero.astro";
 
 <Layout title="Frequently Asked Questions">
     <Page title="FAQs">
-        <Hero
+        <!-- <Hero
             heroTitle="Frequently asked questions"
             firstHeroTitle="What you need to"
             secondHeroTitle="know before visiting"
-        />
+        /> -->
+        <header>
+            <div class="text-center py-20">
+                <div class="flex justify-center mb-3">
+                    <div class="border-2 text-5xl font-semibold border-white inline-flex justify-center px-5 sm:px-0 py-2 rounded-full tracking-widest uppercase hero-font-style">
+                        FAQ's
+                    </div>
+                </div>
+                <p class="text-2xl flex flex-col">
+                    <span>What you need to know</span>
+                    <span>before visiting.</span>
+                </p>
+                <div class="w-full sm:w-100 px-4 sm:px-0 mx-auto mt-12">
+                    <div class="flex flex-wrap gap-3 align-center justify-center">
+                        <a
+                            href="#stays"
+                            class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!"
+                        >
+                            Stays &amp; Accommodations
+                        </a>
+                        <a
+                            href="#activities"
+                            class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!"
+                        >
+                            Activities &amp; Experience
+                        </a>
+                        <a
+                            href="#tours"
+                            class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!"
+                        >
+                            Tours
+                        </a>
+                        <a
+                            href="#booking"
+                            class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!"
+                        >
+                            Booking &amp; Payments
+                        </a>
+                        <a
+                            href="#getting-here"
+                            class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!"
+                        >
+                            Getting Here
+                        </a>
+                        <a
+                            href="#food"
+                            class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!"
+                        >
+                            Food & Dining
+                        </a>
+                        <a
+                            href="#before-visit"
+                            class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!"
+                        >
+                            Before You Visit
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full sm:w-100 px-4 sm:px-0 mx-auto mt-12">
+                    <form role="form">
+                        <input
+                            class="border rounded-full px-6 py-3"
+                            type="search"
+                            placeholder="search..."
+                        />
+                    </form>
+                </div>
+            </div>
+        </header>
         <main class="faq-page">
             <section class="faq-content">
                 <div class="faq-container">
                     <div class="faq-layout">
-                        <aside class="faq-sidebar">
-                            <p class="faq-sidebar-title">Categories</p>
-
+                        <aside class="faq-sidebar hidden sm:block">
                             <nav>
-                                <a href="#stays">Stays & Accommodation</a>
-                                <a href="#activities">
+                                <a class="btn text-white!" href="#stays">
+                                    Stays & Accommodation
+                                </a>
+                                <a class="btn text-white!" href="#activities">
                                     Activities & Experiences
                                 </a>
-                                <a href="#tours">Tours</a>
-                                <a href="#booking">Booking & Payments</a>
-                                <a href="#getting-here">Getting Here</a>
-                                <a href="#food">Food & Dining</a>
-                                <a href="#before-visit">Before Your Visit</a>
+                                <a class="btn text-white!" href="#tours">
+                                    Tours
+                                </a>
+                                <a class="btn text-white!" href="#booking">
+                                    Booking & Payments
+                                </a>
+                                <a class="btn text-white!" href="#getting-here">
+                                    Getting Here
+                                </a>
+                                <a class="btn text-white!" href="#food">
+                                    Food & Dining
+                                </a>
+                                <a class="btn text-white!" href="#before-visit">
+                                    Before Your Visit
+                                </a>
                             </nav>
                         </aside>
 
