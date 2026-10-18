@@ -18,10 +18,13 @@ import Hero from "../components/Hero.astro";
                         FAQ's
                     </div>
                 </div>
-                <p class="text-7xl flex flex-col hero-font-style">
-                    <span>What you need to know</span>
-                    <span>before visiting.</span>
-                </p>
+                <h1 class="text-center hero-font-style">
+                    <span class="block">Know this</span>
+                    <span class="block">before visiting.</span>
+                    <!-- <span class="text-wrap">
+                        {firstHeroTitle} {secondHeroTitle}
+                    </span> -->
+                </h1>
                 <div class="w-full sm:w-100 px-4 sm:px-0 mx-auto mt-22">
                     <div class="flex flex-wrap gap-3 align-center justify-center">
                         <a
@@ -56,13 +59,13 @@ import Hero from "../components/Hero.astro";
                         </a>
                         <a
                             href="#food"
-                            class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!"
+                            class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer"
                         >
                             Food & Dining
                         </a>
                         <a
                             href="#before-visit"
-                            class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!"
+                            class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer"
                         >
                             Before You Visit
                         </a>
