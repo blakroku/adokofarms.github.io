@@ -7,420 +7,1154 @@ const title = "Blog";
 
 <Layout title={title}>
     <Page>
-        <Hero
-            heroTitle="Blog"
-            firstHeroTitle="Stories"
-            secondHeroTitle="from Ghana"
-        />
-
-        <!-- Featured Article -->
-        <section class="bg-white py-20 md:py-28">
-            <div class="container mx-auto px-6">
-                <div class="mx-auto max-w-7xl">
-                    <div class="mb-10">
-                        <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#66705f]">
-                            Featured story
-                        </p>
+        <header>
+            <div class="text-center py-20">
+                <div class="flex justify-center mb-3">
+                    <div class="border-2 text-5xl font-semibold border-white inline-flex justify-center px-5 sm:px-0 py-2 rounded-full tracking-widest uppercase hero-font-style">
+                        Blog
                     </div>
-
-                    <article class="group grid overflow-hidden rounded-[2rem] bg-[#f4f1e8] md:grid-cols-2">
-                        <div class="relative min-h-[400px] overflow-hidden md:min-h-[560px]">
-                            <img
-                                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=85"
-                                alt="Rural Ghana landscape"
-                                class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                            />
-                        </div>
-
-                        <div class="flex items-center p-8 md:p-12 lg:p-16">
-                            <div class="max-w-xl">
-                                <div class="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
-                                    <span>Travel Guide</span>
-                                    <span>•</span>
-                                    <span>8 min read</span>
-                                </div>
-
-                                <h2 class="mt-5 text-4xl font-light tracking-tight text-[#263b2a] md:text-5xl">
-                                    Discovering rural Ghana beyond the tourist
-                                    trail
-                                </h2>
-
-                                <p class="mt-6 text-sm leading-7 text-gray-600 md:text-base">
-                                    A closer look at the landscapes,
-                                    communities, food, and everyday experiences
-                                    that make rural Ghana worth discovering.
-                                </p>
-
-                                <div class="mt-8">
-                                    <a
-                                        href="#"
-                                        class="inline-flex items-center gap-2 rounded-full bg-[#263b2a] px-6 py-3 text-sm text-white transition hover:bg-[#1c2d20]"
-                                    >
-                                        Read story
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke-width="1.5"
-                                            stroke="currentColor"
-                                            class="size-4"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                                            />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                </div>
+                <p class="text-2xl flex flex-col">
+                    <span>Travel & nature information from</span>
+                    <span>Adoko Farms and community.</span>
+                </p>
+                <div class="w-full sm:w-100 px-4 sm:px-0 mx-auto mt-12">
+                    <div class="flex flex-wrap gap-3 align-center justify-center">
+                        <button class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!">
+                            Activities
+                        </button>
+                        <button class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!">
+                            Tours
+                        </button>
+                        <button class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!">
+                            Booking
+                        </button>
+                        <button class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!">
+                            Travel
+                        </button>
+                        <button class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!">
+                            Accomodation
+                        </button>
+                        <button class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!">
+                            Experience
+                        </button>
+                        <button class="btn rounded-full border px-5 py-2 text-sm font-medium cursor-pointer text-white!">
+                            Before You Visit
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full sm:w-100 px-4 sm:px-0 mx-auto mt-12">
+                    <form role="form">
+                        <input
+                            class="border rounded-full px-6 py-3"
+                            type="search"
+                            placeholder="search..."
+                        />
+                    </form>
                 </div>
             </div>
-        </section>
+        </header>
 
-        <!-- Latest Articles -->
-        <section class="bg-[#f4f1e8] py-20 md:py-28">
-            <div class="container mx-auto px-6">
-                <div class="mx-auto max-w-7xl">
-                    <div class="mb-12 flex flex-col gap-5 md:mb-16 md:flex-row md:items-end md:justify-between">
-                        <div>
-                            <p class="text-xs font-medium uppercase tracking-[0.3em] text-[#66705f]">
-                                Latest stories
-                            </p>
-
-                            <h2 class="mt-3 text-4xl font-light tracking-tight text-[#263b2a] md:text-5xl">
-                                From our journal
+        <section class="bg-linear-to-br from-[#60B08A] to-[#1E8D5C] py-20 md:py-32">
+            <div class="w-full lg:w-312 mx-auto px-6">
+                <div class="flex flex-wrap gap-6">
+                    <!-- Blog 1 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/campbuzz-6-wild-experience"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    Experience the Wild at Adoko Farms
+                                </a>
                             </h2>
-                        </div>
-
-                        <p class="max-w-md text-sm leading-7 text-gray-500 md:text-right">
-                            Ideas, stories, and useful guides to help you
-                            experience Ghana differently.
-                        </p>
-                    </div>
-
-                    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                        <!-- Article 1 -->
-                        <article class="group overflow-hidden rounded-[1.75rem] bg-white">
-                            <div class="relative h-72 overflow-hidden">
-                                <img
-                                    src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=85"
-                                    alt="Farm and agriculture in Ghana"
-                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                                />
-                            </div>
-
-                            <div class="p-6 md:p-7">
-                                <div class="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
-                                    <span>Rural Ghana</span>
-                                    <span>•</span>
-                                    <span>6 min</span>
-                                </div>
-
-                                <h3 class="mt-4 text-2xl font-light leading-tight text-[#263b2a]">
-                                    Why rural Ghana deserves a place on your
-                                    itinerary
-                                </h3>
-
-                                <p class="mt-4 text-sm leading-7 text-gray-600">
-                                    Beyond the cities and famous attractions,
-                                    discover another side of Ghana.
-                                </p>
-
-                                <a
-                                    href="#"
-                                    class="mt-6 inline-flex items-center gap-2 text-sm text-[#263b2a] underline underline-offset-4"
-                                >
-                                    Read article
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="size-4"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </article>
-
-                        <!-- Article 2 -->
-                        <article class="group overflow-hidden rounded-[1.75rem] bg-white">
-                            <div class="relative h-72 overflow-hidden">
-                                <img
-                                    src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1000&q=85"
-                                    alt="Nature in Ghana"
-                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                                />
-                            </div>
-
-                            <div class="p-6 md:p-7">
-                                <div class="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
-                                    <span>Nature</span>
-                                    <span>•</span>
-                                    <span>5 min</span>
-                                </div>
-
-                                <h3 class="mt-4 text-2xl font-light leading-tight text-[#263b2a]">
-                                    A slower way to experience nature in Ghana
-                                </h3>
-
-                                <p class="mt-4 text-sm leading-7 text-gray-600">
-                                    Why slowing down can change the way you
-                                    experience a destination.
-                                </p>
-
-                                <a
-                                    href="#"
-                                    class="mt-6 inline-flex items-center gap-2 text-sm text-[#263b2a] underline underline-offset-4"
-                                >
-                                    Read article
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="size-4"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </article>
-
-                        <!-- Article 3 -->
-                        <article class="group overflow-hidden rounded-[1.75rem] bg-white">
-                            <div class="relative h-72 overflow-hidden">
-                                <img
-                                    src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1000&q=85"
-                                    alt="Ghana culture and community"
-                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                                />
-                            </div>
-
-                            <div class="p-6 md:p-7">
-                                <div class="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
-                                    <span>Culture</span>
-                                    <span>•</span>
-                                    <span>7 min</span>
-                                </div>
-
-                                <h3 class="mt-4 text-2xl font-light leading-tight text-[#263b2a]">
-                                    Meeting Ghana beyond the guidebook
-                                </h3>
-
-                                <p class="mt-4 text-sm leading-7 text-gray-600">
-                                    The people, traditions, food, and everyday
-                                    moments that shape the Ghanaian experience.
-                                </p>
-
-                                <a
-                                    href="#"
-                                    class="mt-6 inline-flex items-center gap-2 text-sm text-[#263b2a] underline underline-offset-4"
-                                >
-                                    Read article
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="size-4"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </article>
-
-                        <!-- Article 4 -->
-                        <article class="group overflow-hidden rounded-[1.75rem] bg-white">
-                            <div class="relative h-72 overflow-hidden">
-                                <img
-                                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85"
-                                    alt="Ghana food"
-                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                                />
-                            </div>
-
-                            <div class="p-6 md:p-7">
-                                <div class="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
-                                    <span>Food</span>
-                                    <span>•</span>
-                                    <span>5 min</span>
-                                </div>
-
-                                <h3 class="mt-4 text-2xl font-light leading-tight text-[#263b2a]">
-                                    Food is part of the journey
-                                </h3>
-
-                                <p class="mt-4 text-sm leading-7 text-gray-600">
-                                    Discover the connection between Ghanaian
-                                    food, farming, and place.
-                                </p>
-
-                                <a
-                                    href="#"
-                                    class="mt-6 inline-flex items-center gap-2 text-sm text-[#263b2a] underline underline-offset-4"
-                                >
-                                    Read article
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="size-4"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </article>
-
-                        <!-- Article 5 -->
-                        <article class="group overflow-hidden rounded-[1.75rem] bg-white">
-                            <div class="relative h-72 overflow-hidden">
-                                <img
-                                    src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"
-                                    alt="Travel in Ghana"
-                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                                />
-                            </div>
-
-                            <div class="p-6 md:p-7">
-                                <div class="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
-                                    <span>Travel Guide</span>
-                                    <span>•</span>
-                                    <span>8 min</span>
-                                </div>
-
-                                <h3 class="mt-4 text-2xl font-light leading-tight text-[#263b2a]">
-                                    Planning your first rural Ghana escape
-                                </h3>
-
-                                <p class="mt-4 text-sm leading-7 text-gray-600">
-                                    What to know before leaving the city and
-                                    exploring rural Ghana.
-                                </p>
-
-                                <a
-                                    href="#"
-                                    class="mt-6 inline-flex items-center gap-2 text-sm text-[#263b2a] underline underline-offset-4"
-                                >
-                                    Read article
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="size-4"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </article>
-
-                        <!-- Article 6 -->
-                        <article class="group overflow-hidden rounded-[1.75rem] bg-white">
-                            <div class="relative h-72 overflow-hidden">
-                                <img
-                                    src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=85"
-                                    alt="Agrotourism in Ghana"
-                                    class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                                />
-                            </div>
-
-                            <div class="p-6 md:p-7">
-                                <div class="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#66705f]">
-                                    <span>Agrotourism</span>
-                                    <span>•</span>
-                                    <span>6 min</span>
-                                </div>
-
-                                <h3 class="mt-4 text-2xl font-light leading-tight text-[#263b2a]">
-                                    What makes an agrotourism experience
-                                    different?
-                                </h3>
-
-                                <p class="mt-4 text-sm leading-7 text-gray-600">
-                                    Exploring the connection between travel,
-                                    farming, nature, and local communities.
-                                </p>
-
-                                <a
-                                    href="#"
-                                    class="mt-6 inline-flex items-center gap-2 text-sm text-[#263b2a] underline underline-offset-4"
-                                >
-                                    Read article
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="currentColor"
-                                        class="size-4"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                                        />
-                                    </svg>
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="mt-12 text-center">
-                        <a
-                            href="#"
-                            class="inline-flex items-center gap-2 rounded-full border border-[#263b2a] px-7 py-3 text-sm text-[#263b2a] transition hover:bg-[#263b2a] hover:text-white"
-                        >
-                            View all stories
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="size-4"
+                            <a
+                                href="/blog/campbuzz-6-wild-experience"
+                                aria-label="Read Campbuzz 6.0"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
                             >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                                />
-                            </svg>
-                        </a>
-                    </div>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    October 14, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 2 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/what-to-pack-for-a-camping-trip"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    What to Pack for a Camping Trip: A Practical
+                                    Weekend Checklist
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/what-to-pack-for-a-camping-trip"
+                                aria-label="Read What to Pack for a Camping Trip"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    October 10, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 3 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/benefits-of-spending-time-in-nature"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    Why Spending More Time in Nature Can Change
+                                    Your Weekend
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/benefits-of-spending-time-in-nature"
+                                aria-label="Read Benefits of Spending Time in Nature"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    October 7, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 4 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/quad-biking-for-beginners"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    Quad Biking for Beginners: What to Know
+                                    Before Your First Ride
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/quad-biking-for-beginners"
+                                aria-label="Read Quad Biking for Beginners"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    October 3, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 5 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/camping-with-friends"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    Camping with Friends: How to Plan a Weekend
+                                    Everyone Will Enjoy
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/camping-with-friends"
+                                aria-label="Read Camping with Friends"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    September 29, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 6 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/from-farm-to-table"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    From Farm to Table: Discovering the Story
+                                    Behind Your Food
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/from-farm-to-table"
+                                aria-label="Read From Farm to Table"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    September 24, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 7 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/sunrise-hiking-tips"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    Sunrise Hiking: Tips for Making the Most of
+                                    an Early Morning Walk
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/sunrise-hiking-tips"
+                                aria-label="Read Sunrise Hiking Tips"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    September 19, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 8 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/bonfire-night-ideas"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    Bonfire Night Ideas for a Relaxing Evening
+                                    Outdoors
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/bonfire-night-ideas"
+                                aria-label="Read Bonfire Night Ideas"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    September 14, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 9 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/weekend-digital-detox"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    A Weekend Digital Detox: Reconnect with the
+                                    World Around You
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/weekend-digital-detox"
+                                aria-label="Read Weekend Digital Detox"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    September 9, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 10 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/family-outdoor-getaway"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    How to Plan an Outdoor Getaway the Whole
+                                    Family Can Enjoy
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/family-outdoor-getaway"
+                                aria-label="Read Family Outdoor Getaway"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    September 4, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 11 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/outdoor-team-building-activities"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    Outdoor Team-Building Activities for Groups
+                                    and Workplaces
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/outdoor-team-building-activities"
+                                aria-label="Read Outdoor Team-Building Activities"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    August 29, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 12 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/planning-a-weekend-getaway"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    How to Plan a Weekend Getaway Without
+                                    Overcomplicating It
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/planning-a-weekend-getaway"
+                                aria-label="Read Planning a Weekend Getaway"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    August 24, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 13 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/activities-for-a-nature-getaway"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    Things to Do on a Nature Getaway When You
+                                    Need a Break from Routine
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/activities-for-a-nature-getaway"
+                                aria-label="Read Activities for a Nature Getaway"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    August 19, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 14 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/eco-tourism-explained"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    Eco-Tourism Explained: How to Travel More
+                                    Responsibly
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/eco-tourism-explained"
+                                aria-label="Read Eco-Tourism Explained"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    August 14, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 15 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/outdoor-movie-night"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    How to Plan an Outdoor Movie Night with
+                                    Friends
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/outdoor-movie-night"
+                                aria-label="Read Outdoor Movie Night Ideas"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    August 9, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 16 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/planning-a-family-day-out"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    Planning a Family Day Out: Activities, Food
+                                    and What to Bring
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/planning-a-family-day-out"
+                                aria-label="Read Planning a Family Day Out"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    August 4, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 17 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/five-ways-to-unwind-after-a-busy-week"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    Five Ways to Unwind After a Busy Week
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/five-ways-to-unwind-after-a-busy-week"
+                                aria-label="Read Five Ways to Unwind"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    July 30, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 18 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/organizing-a-group-getaway"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    How to Organize a Group Getaway Without the
+                                    Stress
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/organizing-a-group-getaway"
+                                aria-label="Read Organizing a Group Getaway"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    July 25, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 19 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/what-makes-a-great-weekend-retreat"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    What Makes a Great Weekend Retreat? Five
+                                    Things to Consider
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/what-makes-a-great-weekend-retreat"
+                                aria-label="Read What Makes a Great Weekend Retreat"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    July 20, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <!-- Blog 20 -->
+                    <article class="w-full lg:w-[calc(50%-12px)] bg-white p-8 rounded-3xl group">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-3xl font-semibold leading-tight">
+                                <a
+                                    href="/blog/plan-your-visit-to-adoko-farms"
+                                    class="transition-colors duration-200 group-hover:text-[#1E8D5C]"
+                                >
+                                    Looking for Your Next Escape? Start Planning
+                                    Your Visit to Adoko Farms
+                                </a>
+                            </h2>
+                            <a
+                                href="/blog/plan-your-visit-to-adoko-farms"
+                                aria-label="Read Plan Your Visit to Adoko Farms"
+                                class="shrink-0 opacity-0 translate-y-1 text-gray-900 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-[#1E8D5C] transition-all duration-200"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.8"
+                                    stroke="currentColor"
+                                    class="w-10 h-10"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M7 17 17 7M7 7h10v10"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <footer class="flex items-center gap-3 mt-10">
+                            <img
+                                src="https://images.unsplash.com/photo-1764341256580-38869ac74eba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                                alt="Adoko Farms Eco Resort"
+                                class="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                                <p class="font-semibold">
+                                    <a
+                                        href="/about"
+                                        class="hover:text-[#1E8D5C] transition-colors duration-200"
+                                    >
+                                        Adoko Farms Eco Resort
+                                    </a>
+                                </p>
+                                <p class="text-sm text-gray-500">
+                                    July 15, 2026
+                                </p>
+                            </div>
+                        </footer>
+                    </article>
                 </div>
             </div>
         </section>
