@@ -9,12 +9,12 @@ import FiveStars from "../components/utilities/FiveStars.astro";
     <Page>
         <Hero
             heroTitle="Reviews"
-            firstHeroTitle="Stories from"
-            secondHeroTitle="our guests"
+            firstHeroTitle="What our guests"
+            secondHeroTitle="have to say"
         />
         <main class="reviews-page">
             <!-- Introduction -->
-            <section class="reviews-intro">
+            <!-- <section class="reviews-intro">
                 <div class="reviews-container">
                     <div class="reviews-intro-grid">
                         <div>
@@ -43,10 +43,78 @@ import FiveStars from "../components/utilities/FiveStars.astro";
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- Reviews Grid -->
-            <section class="reviews-list">
+            <section class="reviews-list bg-gradient-to-br from-[#E1F0EA] to-[#1E8D5C]">
+                <header class="text-center space-y-4 mb-20">
+                    <section class="px-4 lg:px-0 mb-10">
+                        <div class="mb-2 w-full lg:w-265 mx-auto">
+                            <h2 class="text-3xl font-semibold">
+                                <span>
+                                    Loved by <span>Guests</span>,{" "}
+                                </span>
+                                <span>Remembered for the Experience</span>
+                            </h2>
+                            <h3 class="mt-4 border-l-4 border-[#014349] pl-4 text-muted-foreground text-2xl font-light">
+                                Read what our guests have to say about their
+                                experiences at Adoko Farms Eco Resort, from
+                                outdoor adventures and peaceful getaways to
+                                memorable moments spent in nature.
+                            </h3>
+                        </div>
+                    </section>
+                    <section class="px-4 lg:px-0">
+                        <div class="w-full lg:w-265 mx-auto">
+                            <div class="p-6 w-full md:w-170 mx-auto rounded-2xl bg-[yellow] rounded-tl-[100px] rounded-br-[100px] md:rounded-4xl">
+                                <span class="block mb-3">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="80"
+                                        height="80"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-quote-open text-[#014349]"
+                                    >
+                                        <path
+                                            stroke="none"
+                                            d="M0 0h24v24H0z"
+                                            fill="none"
+                                        ></path>
+                                        <path d="M14 13h4a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-6q 0 -4 4 -5"></path>
+                                        <path d="M5 13h4a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-6q 0 -4 4 -5"></path>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <span>
+                                        “At Adoko Farms Eco Resort, we believe
+                                        every guest deserves a memorable
+                                        experience from the moment they discover
+                                        us to the moment they arrive. Our goal
+                                        is to make planning a visit simple,
+                                        welcoming, and worthwhile, while
+                                        continually improving the experiences we
+                                        offer.”
+                                    </span>
+                                </div>
+                                <div class="mt-5 flex gap-4">
+                                    <!-- <div class="flex-shrink-0">s</div> -->
+                                    <div class="flex flex-col text-sm font-semibold">
+                                        <span>Paul Adoko</span>
+                                        <span>
+                                            Chief Marketing Officer, Adoko Farms
+                                            Eco Resort
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </header>
                 <div class="reviews-container">
                     <div class="reviews-grid">
                         <article class="review-card">
@@ -75,7 +143,7 @@ import FiveStars from "../components/utilities/FiveStars.astro";
                             </footer>
                         </article>
 
-                        <article class="review-card review-card-dark">
+                        <article class="review-card">
                             <div class="review-stars">
                                 <FiveStars />
                             </div>
@@ -147,7 +215,7 @@ import FiveStars from "../components/utilities/FiveStars.astro";
                             </footer>
                         </article>
 
-                        <article class="review-card review-card-dark bg-linear-to-br from-[#60B08A] to-[#20905F]">
+                        <article class="review-card">
                             <div class="review-stars">
                                 <FiveStars />
                             </div>
@@ -274,7 +342,7 @@ import FiveStars from "../components/utilities/FiveStars.astro";
 
             .reviews-hero h1 {
                 margin: 24px 0 0;
-                font-family: Georgia, serif;
+                /*font-family: Georgia, serif;*/
                 font-size: clamp(52px, 8vw, 96px);
                 font-weight: 300;
                 line-height: 0.95;
@@ -310,7 +378,7 @@ import FiveStars from "../components/utilities/FiveStars.astro";
             .reviews-intro h2 {
                 max-width: 800px;
                 margin: 18px 0 0;
-                font-family: Georgia, serif;
+                /*font-family: Georgia, serif;*/
                 font-size: clamp(38px, 5vw, 64px);
                 font-weight: 300;
                 line-height: 1.05;
@@ -405,7 +473,7 @@ import FiveStars from "../components/utilities/FiveStars.astro";
 
             .reviews-section-heading h2 {
                 margin: 18px 0 0;
-                font-family: Georgia, serif;
+                /*font-family: Georgia, serif;*/
                 font-size: clamp(40px, 5vw, 62px);
                 font-weight: 300;
                 line-height: 1;
@@ -451,7 +519,7 @@ import FiveStars from "../components/utilities/FiveStars.astro";
             .review-card blockquote {
                 max-width: 550px;
                 margin: 22px 0 40px;
-                font-family: Georgia, serif;
+                /*font-family: Georgia, serif;*/
                 font-size: 24px;
                 font-weight: 300;
                 line-height: 1.45;
@@ -493,7 +561,7 @@ import FiveStars from "../components/utilities/FiveStars.astro";
 
             .review-statement-content > span {
                 display: block;
-                font-family: Georgia, serif;
+                /*font-family: Georgia, serif;*/
                 font-size: 90px;
                 line-height: 0.6;
                 color: #66705f;
@@ -501,7 +569,7 @@ import FiveStars from "../components/utilities/FiveStars.astro";
 
             .review-statement h2 {
                 margin: 50px 0 0;
-                font-family: Georgia, serif;
+                /*font-family: Georgia, serif;*/
                 font-size: clamp(42px, 6vw, 72px);
                 font-weight: 300;
                 line-height: 1.05;
@@ -526,7 +594,7 @@ import FiveStars from "../components/utilities/FiveStars.astro";
 
             .reviews-cta h2 {
                 margin: 22px 0 0;
-                font-family: Georgia, serif;
+                /*font-family: Georgia, serif;*/
                 font-size: clamp(52px, 7vw, 90px);
                 font-weight: 300;
                 line-height: 0.95;
