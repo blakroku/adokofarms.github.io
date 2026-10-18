@@ -14,15 +14,15 @@ import Hero from "../components/Hero.astro";
         <header>
             <div class="text-center py-20">
                 <div class="flex justify-center mb-3">
-                    <div class="border-2 text-5xl font-semibold border-white inline-flex justify-center px-5 sm:px-0 py-2 rounded-full tracking-widest uppercase hero-font-style">
+                    <div class="border-2 text-[#322E28] font-semibold border-[#322E28] inline-flex justify-center px-5 py-2 rounded-full text-sm tracking-widest uppercase">
                         FAQ's
                     </div>
                 </div>
-                <p class="text-2xl flex flex-col">
+                <p class="text-7xl flex flex-col hero-font-style">
                     <span>What you need to know</span>
                     <span>before visiting.</span>
                 </p>
-                <div class="w-full sm:w-100 px-4 sm:px-0 mx-auto mt-12">
+                <div class="w-full sm:w-100 px-4 sm:px-0 mx-auto mt-22">
                     <div class="flex flex-wrap gap-3 align-center justify-center">
                         <a
                             href="#stays"
@@ -68,7 +68,7 @@ import Hero from "../components/Hero.astro";
                         </a>
                     </div>
                 </div>
-                <div class="w-full sm:w-100 px-4 sm:px-0 mx-auto mt-12">
+                <!-- <div class="w-full sm:w-100 px-4 sm:px-0 mx-auto mt-12">
                     <form role="form">
                         <input
                             class="border rounded-full px-6 py-3"
@@ -76,14 +76,14 @@ import Hero from "../components/Hero.astro";
                             placeholder="search..."
                         />
                     </form>
-                </div>
+                </div> -->
             </div>
         </header>
         <main class="faq-page">
             <section class="faq-content">
                 <div class="faq-container">
-                    <div class="faq-layout">
-                        <aside class="faq-sidebar hidden sm:block">
+                    <div class="faq-lasyout">
+                        <!-- <aside class="faq-sidebar hidden sm:block">
                             <nav>
                                 <a class="btn text-white!" href="#stays">
                                     Stays & Accommodation
@@ -107,7 +107,7 @@ import Hero from "../components/Hero.astro";
                                     Before Your Visit
                                 </a>
                             </nav>
-                        </aside>
+                        </aside> -->
 
                         <div class="faq-list">
                             <section class="faq-category" id="stays">
@@ -115,43 +115,103 @@ import Hero from "../components/Hero.astro";
                                     <h2>Stays & Accommodation</h2>
                                 </div>
 
-                                <div class="faq-items">
-                                    <div class="faq-item">
-                                        <h3>
-                                            What types of accommodation do you
-                                            offer?
-                                        </h3>
-                                        <p>
+                                <div class="space-y-4">
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                What types of accommodation do
+                                                you offer?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             We offer accommodation designed for
                                             guests who want to slow down, enjoy
                                             nature, and experience a quieter
                                             side of Ghana.
-                                        </p>
+                                        </div>
                                     </div>
 
-                                    <div class="faq-item">
-                                        <h3>
-                                            Can I stay at Adoko Farms for one
-                                            night?
-                                        </h3>
-                                        <p>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                Can I stay at Adoko Farms for
+                                                one night?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Yes, depending on availability and
                                             the minimum stay requirements for
                                             the accommodation you choose.
-                                        </p>
+                                        </div>
                                     </div>
 
-                                    <div class="faq-item">
-                                        <h3>
-                                            Is Adoko Farms suitable for
-                                            families?
-                                        </h3>
-                                        <p>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                Is Adoko Farms suitable for
+                                                families?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Yes. Our farm and surrounding area
                                             offer experiences that can be
                                             enjoyed by families, couples,
                                             groups, and individual travellers.
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
@@ -161,45 +221,105 @@ import Hero from "../components/Hero.astro";
                                     <h2>Activities & Experiences</h2>
                                 </div>
 
-                                <div class="faq-items">
-                                    <div class="faq-item">
-                                        <h3>
-                                            What activities can I do at Adoko
-                                            Farms?
-                                        </h3>
-                                        <p>
+                                <div class="space-y-4">
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                What activities can I do at
+                                                Adoko Farms?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Our experiences include farm
                                             activities, nature experiences,
                                             guided tours, outdoor adventures,
                                             and other ways to explore the
                                             surrounding area.
-                                        </p>
+                                        </div>
                                     </div>
 
-                                    <div class="faq-item">
-                                        <h3>
-                                            Do I need to book activities in
-                                            advance?
-                                        </h3>
-                                        <p>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                Do I need to book activities in
+                                                advance?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             We recommend booking in advance so
                                             we can prepare for your visit and
                                             confirm availability.
-                                        </p>
+                                        </div>
                                     </div>
 
-                                    <div class="faq-item">
-                                        <h3>
-                                            Are activities suitable for
-                                            children?
-                                        </h3>
-                                        <p>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                Are activities suitable for
+                                                children?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Some activities are suitable for
                                             children, while others may have age
                                             or other requirements. Check the
                                             individual activity details before
                                             booking.
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
@@ -209,50 +329,133 @@ import Hero from "../components/Hero.astro";
                                     <h2>Tours</h2>
                                 </div>
 
-                                <div class="faq-items">
-                                    <div class="faq-item">
-                                        <h3>
-                                            What is the difference between a
-                                            tour and an activity?
-                                        </h3>
-                                        <p>
+                                <div class="space-y-4">
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                What is the difference between a
+                                                tour and an activity?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             An activity is an individual
                                             experience you can enjoy at or
                                             around Adoko Farms. A tour is a
                                             planned journey with its own
                                             schedule, itinerary, and booking
                                             details.
-                                        </p>
+                                        </div>
                                     </div>
 
-                                    <div class="faq-item">
-                                        <h3>Can I book an upcoming tour?</h3>
-                                        <p>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                Can I book an upcoming tour?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Yes. Upcoming tours are listed on
                                             our Tours page with their dates,
                                             details, and booking options.
-                                        </p>
+                                        </div>
                                     </div>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                Can I view tours that have
+                                                already happened?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
 
-                                    <div class="faq-item">
-                                        <h3>
-                                            Can I view tours that have already
-                                            happened?
-                                        </h3>
-                                        <p>
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Yes. Past tours are kept as part of
                                             our travel journal, allowing you to
                                             explore previous journeys.
-                                        </p>
+                                        </div>
                                     </div>
 
-                                    <div class="faq-item">
-                                        <h3>Can I book a past tour?</h3>
-                                        <p>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                Can I book a past tour?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             No. Past tours are historical
                                             journeys and are available to view
                                             rather than book.
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
@@ -262,35 +465,101 @@ import Hero from "../components/Hero.astro";
                                     <h2>Booking & Payments</h2>
                                 </div>
 
-                                <div class="faq-items">
-                                    <div class="faq-item">
-                                        <h3>How do I make a booking?</h3>
-                                        <p>
+                                <div class="space-y-4">
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                How do I make a booking?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Choose the experience,
                                             accommodation, or tour you are
                                             interested in and follow the booking
                                             instructions provided on the
                                             relevant page.
-                                        </p>
+                                        </div>
                                     </div>
 
-                                    <div class="faq-item">
-                                        <h3>Do I need to book in advance?</h3>
-                                        <p>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                Do I need to book in advance?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Advance booking is recommended,
                                             particularly for accommodation,
                                             guided experiences, and scheduled
                                             tours.
-                                        </p>
+                                        </div>
                                     </div>
 
-                                    <div class="faq-item">
-                                        <h3>Can I make a group booking?</h3>
-                                        <p>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                Can I make a group booking?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Yes. For larger groups, contact us
                                             directly so we can discuss
                                             availability and arrangements.
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
@@ -300,35 +569,99 @@ import Hero from "../components/Hero.astro";
                                     <h2>Getting Here</h2>
                                 </div>
 
-                                <div class="faq-items">
-                                    <div class="faq-item">
-                                        <h3>Where is Adoko Farms located?</h3>
-                                        <p>
+                                <div class="space-y-4">
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                Where is Adoko Farms located?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Adoko Farms is located in
                                             Akropong-Akuapem, Ghana, surrounded
                                             by the landscape of rural Ghana.
-                                        </p>
+                                        </div>
                                     </div>
 
-                                    <div class="faq-item">
-                                        <h3>How do I get to Adoko Farms?</h3>
-                                        <p>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                How do I get to Adoko Farms?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             You can find directions and travel
                                             information on our Directions page.
-                                        </p>
+                                        </div>
                                     </div>
 
-                                    <div class="faq-item">
-                                        <h3>
-                                            Can I come from Accra for a day
-                                            visit?
-                                        </h3>
-                                        <p>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                Can I come from Accra for a day
+                                                visit?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Yes. Adoko Farms can be visited as
                                             part of a day trip from Accra,
                                             depending on the experience you
                                             choose.
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
@@ -338,31 +671,71 @@ import Hero from "../components/Hero.astro";
                                     <h2>Food & Dining</h2>
                                 </div>
 
-                                <div class="faq-items">
-                                    <div class="faq-item">
-                                        <h3>
-                                            Do you offer food or dining
-                                            experiences?
-                                        </h3>
-                                        <p>
+                                <div class="space-y-4">
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                Do you offer food or dining
+                                                experiences?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Yes. Food is part of the experience
                                             at Adoko Farms, with farm-to-table
                                             and local dining experiences
                                             available depending on the visit.
-                                        </p>
+                                        </div>
                                     </div>
 
-                                    <div class="faq-item">
-                                        <h3>
-                                            Can you accommodate dietary
-                                            requirements?
-                                        </h3>
-                                        <p>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                CCan you accommodate dietary
+                                                requirements?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Let us know about any dietary
                                             requirements when making your
                                             booking so we can discuss what can
                                             be accommodated.
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
@@ -372,37 +745,103 @@ import Hero from "../components/Hero.astro";
                                     <h2>Before Your Visit</h2>
                                 </div>
 
-                                <div class="faq-items">
-                                    <div class="faq-item">
-                                        <h3>What should I wear?</h3>
-                                        <p>
+                                <div class="space-y-4">
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                What should I wear?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Comfortable clothing and suitable
                                             footwear are recommended. Some
                                             experiences take place outdoors, so
                                             dress appropriately for walking and
                                             changing weather conditions.
-                                        </p>
+                                        </div>
                                     </div>
 
-                                    <div class="faq-item">
-                                        <h3>What happens if it rains?</h3>
-                                        <p>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                What happens if it rains?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Some outdoor experiences may be
                                             affected by weather conditions. If
                                             conditions require a change to your
                                             activity, we will advise you about
                                             the available options.
-                                        </p>
+                                        </div>
                                     </div>
 
-                                    <div class="faq-item">
-                                        <h3>Can I bring a camera?</h3>
-                                        <p>
+                                    <div
+                                        class="rounded-2xl px-8 py-6 bg-[#EBE8E5]"
+                                        x-data="{ open: false }"
+                                    >
+                                        <div
+                                            class="flex justify-between cursor-pointer"
+                                            @click="open = !open"
+                                        >
+                                            <h3 class="font-semibold text-xl">
+                                                Can I bring a camera?
+                                            </h3>
+                                            <span>
+                                                <span x-show="!open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-down-01 font-bold text-3xl"></i>
+                                                </span>
+                                                <span x-show="open">
+                                                    <i class="hgi hgi-stroke hgi-rounded hgi-arrow-up-01 font-bold text-3xl"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            class="faqs-content mt-6"
+                                            x-show="open"
+                                        >
                                             Absolutely. There are plenty of
                                             opportunities to photograph the
                                             landscape, farm, nature, and your
                                             experiences.
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
