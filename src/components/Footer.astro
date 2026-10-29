@@ -1,6 +1,14 @@
 ---
 import Arrow from "./icons/Arrow.astro";
 import FaqCard from "./utilities/FaqCard.astro";
+
+const FAQ_API_URL =
+    "https://via-from.test/api/broadcast/a156f03d-b6ee-4281-b74b-898ff3c2c755/faqs/component";
+
+const response = await fetch(FAQ_API_URL);
+const result = await response.json();
+
+const faqs = result.success && Array.isArray(result.faqs) ? result.faqs : [];
 ---
 
 <footer class="pb-32 px-4 sm:px-0">
@@ -25,54 +33,15 @@ import FaqCard from "./utilities/FaqCard.astro";
         </header>
         <main class="mt-12">
             <section class="w-full md:w-[50%] mx-auto space-y-4">
-                <FaqCard title="What is Adoko Farms and What do we do?">
-                    lorem ipsum graham tech cloned with more facilities. And
-                    another long message that was not intended for certain
-                    aspects. lorem ipsum graham tech cloned with more
-                    facilities. And another long message that was not intended
-                    for certain aspects.
-                </FaqCard>
-
-                <FaqCard title="Who do we serve in the tourism industry">
-                    lorem ipsum graham tech cloned with more facilities. And
-                    another long message that was not intended for certain
-                    aspects. lorem ipsum graham tech cloned with more
-                    facilities. And another long message that was not intended
-                    for certain aspects.
-                </FaqCard>
-
-                <FaqCard title="How much fun can I have">
-                    lorem ipsum graham tech cloned with more facilities. And
-                    another long message that was not intended for certain
-                    aspects. lorem ipsum graham tech cloned with more
-                    facilities. And another long message that was not intended
-                    for certain aspects.
-                </FaqCard>
-
-                <FaqCard title="Can I host my occasion at your place?">
-                    lorem ipsum graham tech cloned with more facilities. And
-                    another long message that was not intended for certain
-                    aspects. lorem ipsum graham tech cloned with more
-                    facilities. And another long message that was not intended
-                    for certain aspects.
-                </FaqCard>
-
-                <FaqCard title="What do I need to visit?">
-                    lorem ipsum graham tech cloned with more facilities. And
-                    another long message that was not intended for certain
-                    aspects. lorem ipsum graham tech cloned with more
-                    facilities. And another long message that was not intended
-                    for certain aspects.
-                </FaqCard>
-
-                <FaqCard title="Anything else worth knowing?">
-                    lorem ipsum graham tech cloned with more facilities. And
-                    another long message that was not intended for certain
-                    aspects. lorem ipsum graham tech cloned with more
-                    facilities. And another long message that was not intended
-                    for certain aspects.
-                </FaqCard>
-
+                <!-- FAQs start looping from here -->
+                {faqs.length > 0 ? (
+                    faqs.map((faq) => (
+                        <FaqCard title={faq.title}>{faq.content}</FaqCard>
+                    ))
+                ) : (
+                    <p>No FAQs available.</p>
+                )}
+                <!-- FAQs start looping ends here -->
                 <footer class="mt-8 text-center">
                     <a href="/faqs" class="btn">
                         Visit our knowledge base
